@@ -8,16 +8,28 @@ As the course progresses, this repository will evolve to include Front-end devel
 
 📌 Topics Covered
 
-Back-end development with C#
-
-Server-side logic and architecture
-
-API design and data management
-
-Front-end fundamentals (coming soon)
-
-Client–server integration
+- Back-end development with C#
+- Server-side logic and architecture
+- API design and data management
+- Front-end fundamentals (coming soon)
+- Client–server integration
 
 🚀 Purpose
 
 The goal of this repository is to document my growth as a developer, apply theoretical concepts through practice, and build a strong foundation in full-stack web development.
+
+==================================================
+
+## 📄 Academic Tasks
+
+This section contains individual academic assignments and written documentation for the course.
+
+- [Task 01 – Git Essay](./tasks/task-01-git-essay/ensayo-git.md)
+
+==================================================
+
+## 🧩 Projects
+
+This section contains larger practical projects developed throughout the course.
+
+(Coming soon)
