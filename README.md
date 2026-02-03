@@ -17,6 +17,12 @@ As the course progresses, this repository will evolve to include Front-end devel
 🚀 Purpose
 
 The goal of this repository is to document my growth as a developer, apply theoretical concepts through practice, and build a strong foundation in full-stack web development.
+==================================================
+## 📚 Projects in class
+
+This section contains individual projects made during the classes of this course
+
+- [SuperHeroes - AKA: Clase2](./classes/SuperHeroeProject/Clase2/)
 
 ==================================================
 
