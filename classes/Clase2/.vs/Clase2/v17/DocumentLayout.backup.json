@@ -1,0 +1,161 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\daniq\\Documents\\UDEO\\Progra\\Clases\\Clase2\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{0691A57A-06BC-4004-887F-4E99205F3A9C}|Clase2\\Clase2.csproj|c:\\users\\daniq\\documents\\udeo\\progra\\clases\\clase2\\clase2\\dtos\\villano\\villanocreatedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0691A57A-06BC-4004-887F-4E99205F3A9C}|Clase2\\Clase2.csproj|solutionrelative:clase2\\dtos\\villano\\villanocreatedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0691A57A-06BC-4004-887F-4E99205F3A9C}|Clase2\\Clase2.csproj|c:\\users\\daniq\\documents\\udeo\\progra\\clases\\clase2\\clase2\\servicios\\serviciovillano.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0691A57A-06BC-4004-887F-4E99205F3A9C}|Clase2\\Clase2.csproj|solutionrelative:clase2\\servicios\\serviciovillano.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0691A57A-06BC-4004-887F-4E99205F3A9C}|Clase2\\Clase2.csproj|c:\\users\\daniq\\documents\\udeo\\progra\\clases\\clase2\\clase2\\interfaz\\iserviciovillano.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0691A57A-06BC-4004-887F-4E99205F3A9C}|Clase2\\Clase2.csproj|solutionrelative:clase2\\interfaz\\iserviciovillano.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0691A57A-06BC-4004-887F-4E99205F3A9C}|Clase2\\Clase2.csproj|c:\\users\\daniq\\documents\\udeo\\progra\\clases\\clase2\\clase2\\controllers\\villanocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0691A57A-06BC-4004-887F-4E99205F3A9C}|Clase2\\Clase2.csproj|solutionrelative:clase2\\controllers\\villanocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0691A57A-06BC-4004-887F-4E99205F3A9C}|Clase2\\Clase2.csproj|c:\\users\\daniq\\documents\\udeo\\progra\\clases\\clase2\\clase2\\controllers\\superheroecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0691A57A-06BC-4004-887F-4E99205F3A9C}|Clase2\\Clase2.csproj|solutionrelative:clase2\\controllers\\superheroecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0691A57A-06BC-4004-887F-4E99205F3A9C}|Clase2\\Clase2.csproj|c:\\users\\daniq\\documents\\udeo\\progra\\clases\\clase2\\clase2\\interfaz\\iserviciosuperheroe.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0691A57A-06BC-4004-887F-4E99205F3A9C}|Clase2\\Clase2.csproj|solutionrelative:clase2\\interfaz\\iserviciosuperheroe.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0691A57A-06BC-4004-887F-4E99205F3A9C}|Clase2\\Clase2.csproj|c:\\users\\daniq\\documents\\udeo\\progra\\clases\\clase2\\clase2\\servicios\\serviciosuperheroe.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0691A57A-06BC-4004-887F-4E99205F3A9C}|Clase2\\Clase2.csproj|solutionrelative:clase2\\servicios\\serviciosuperheroe.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 247,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "VillanoCreateDto.cs",
+              "DocumentMoniker": "C:\\Users\\daniq\\Documents\\UDEO\\Progra\\Clases\\Clase2\\Clase2\\DTOs\\Villano\\VillanoCreateDto.cs",
+              "RelativeDocumentMoniker": "Clase2\\DTOs\\Villano\\VillanoCreateDto.cs",
+              "ToolTip": "C:\\Users\\daniq\\Documents\\UDEO\\Progra\\Clases\\Clase2\\Clase2\\DTOs\\Villano\\VillanoCreateDto.cs*",
+              "RelativeToolTip": "Clase2\\DTOs\\Villano\\VillanoCreateDto.cs*",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-02-09T00:59:40.639Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "ServicioVillano.cs",
+              "DocumentMoniker": "C:\\Users\\daniq\\Documents\\UDEO\\Progra\\Clases\\Clase2\\Clase2\\Servicios\\ServicioVillano.cs",
+              "RelativeDocumentMoniker": "Clase2\\Servicios\\ServicioVillano.cs",
+              "ToolTip": "C:\\Users\\daniq\\Documents\\UDEO\\Progra\\Clases\\Clase2\\Clase2\\Servicios\\ServicioVillano.cs*",
+              "RelativeToolTip": "Clase2\\Servicios\\ServicioVillano.cs*",
+              "ViewState": "AgIAACkAAAAAAAAAAAAQwEoAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-02-08T14:11:50.851Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{e506b91c-c606-466a-90a9-123d1d1e12b3}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{b1e99781-ab81-11d0-b683-00aa00a3ee26}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "VillanoController.cs",
+              "DocumentMoniker": "C:\\Users\\daniq\\Documents\\UDEO\\Progra\\Clases\\Clase2\\Clase2\\Controllers\\VillanoController.cs",
+              "RelativeDocumentMoniker": "Clase2\\Controllers\\VillanoController.cs",
+              "ToolTip": "C:\\Users\\daniq\\Documents\\UDEO\\Progra\\Clases\\Clase2\\Clase2\\Controllers\\VillanoController.cs*",
+              "RelativeToolTip": "Clase2\\Controllers\\VillanoController.cs*",
+              "ViewState": "AgIAADsAAAAAAAAAAAAQwFwAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-02-08T14:17:32.361Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "IServicioVillano.cs",
+              "DocumentMoniker": "C:\\Users\\daniq\\Documents\\UDEO\\Progra\\Clases\\Clase2\\Clase2\\Interfaz\\IServicioVillano.cs",
+              "RelativeDocumentMoniker": "Clase2\\Interfaz\\IServicioVillano.cs",
+              "ToolTip": "C:\\Users\\daniq\\Documents\\UDEO\\Progra\\Clases\\Clase2\\Clase2\\Interfaz\\IServicioVillano.cs*",
+              "RelativeToolTip": "Clase2\\Interfaz\\IServicioVillano.cs*",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-02-08T14:05:42.994Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "SuperHeroeController.cs",
+              "DocumentMoniker": "C:\\Users\\daniq\\Documents\\UDEO\\Progra\\Clases\\Clase2\\Clase2\\Controllers\\SuperHeroeController.cs",
+              "RelativeDocumentMoniker": "Clase2\\Controllers\\SuperHeroeController.cs",
+              "ToolTip": "C:\\Users\\daniq\\Documents\\UDEO\\Progra\\Clases\\Clase2\\Clase2\\Controllers\\SuperHeroeController.cs",
+              "RelativeToolTip": "Clase2\\Controllers\\SuperHeroeController.cs",
+              "ViewState": "AgIAABMAAAAAAAAAAAAQwAoAAAAiAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-25T14:07:16.976Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "IServicioSuperHeroe.cs",
+              "DocumentMoniker": "C:\\Users\\daniq\\Documents\\UDEO\\Progra\\Clases\\Clase2\\Clase2\\Interfaz\\IServicioSuperHeroe.cs",
+              "RelativeDocumentMoniker": "Clase2\\Interfaz\\IServicioSuperHeroe.cs",
+              "ToolTip": "C:\\Users\\daniq\\Documents\\UDEO\\Progra\\Clases\\Clase2\\Clase2\\Interfaz\\IServicioSuperHeroe.cs",
+              "RelativeToolTip": "Clase2\\Interfaz\\IServicioSuperHeroe.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAABPAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-02-08T14:30:01.883Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "ServicioSuperHeroe.cs",
+              "DocumentMoniker": "C:\\Users\\daniq\\Documents\\UDEO\\Progra\\Clases\\Clase2\\Clase2\\Servicios\\ServicioSuperHeroe.cs",
+              "RelativeDocumentMoniker": "Clase2\\Servicios\\ServicioSuperHeroe.cs",
+              "ToolTip": "C:\\Users\\daniq\\Documents\\UDEO\\Progra\\Clases\\Clase2\\Clase2\\Servicios\\ServicioSuperHeroe.cs",
+              "RelativeToolTip": "Clase2\\Servicios\\ServicioSuperHeroe.cs",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-02-01T13:21:18.109Z",
+              "EditorCaption": ""
+            }
+          ]
+        },
+        {
+          "DockedWidth": 247,
+          "SelectedChildIndex": -1,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{eefa5220-e298-11d0-8f78-00a0c9110057}"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
