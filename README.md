@@ -23,6 +23,7 @@ The goal of this repository is to document my growth as a developer, apply theor
 This section contains individual projects made during the classes of this course
 
 - [SuperHeroes - AKA: Clase2](./classes/SuperHeroeProject/Clase2/)
+- [Pre-Exam](./classes/Pre_Examen/)
 
 ==================================================
 
@@ -33,6 +34,12 @@ This section contains individual academic assignments and written documentation 
 - [Task 01 – Git Essay](./tasks/task-01-git-essay/ensayo-git.md)
 
 ==================================================
+
+## 🐧 Exams
+
+This section contains individual exams like partial and final exams for this course.
+
+- [Partial Exam](./exams/Examen_Parcial_DesarrolloWeb1/)
 
 ## 🧩 Projects
 
