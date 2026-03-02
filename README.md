@@ -1,4 +1,4 @@
-🌐 Web Development Repository
+# 🌐 Web Development Repository
 
 This repository contains my work and learning process for the Web Development course, covering the core pillars of modern web applications: Back-end, Front-end, and the integration between both layers.
 
@@ -6,7 +6,7 @@ The initial focus of this repository is Back-end development using C#, where I e
 
 As the course progresses, this repository will evolve to include Front-end development and the complete communication flow between client and server, providing a full-stack perspective on web application development.
 
-📌 Topics Covered
+## 📌 Topics Covered
 
 - Back-end development with C#
 - Server-side logic and architecture
@@ -14,9 +14,10 @@ As the course progresses, this repository will evolve to include Front-end devel
 - Front-end fundamentals (coming soon)
 - Client–server integration
 
-🚀 Purpose
+## 🚀 Purpose
 
 The goal of this repository is to document my growth as a developer, apply theoretical concepts through practice, and build a strong foundation in full-stack web development.
+
 ==================================================
 ## 📚 Projects in class
 
