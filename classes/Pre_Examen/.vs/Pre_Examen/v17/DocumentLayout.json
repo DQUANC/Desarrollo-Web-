@@ -1,0 +1,108 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\daniq\\Documents\\UDEO\\Desarrollo-Web-\\classes\\Pre_Examen\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{4686630E-3F96-4D7A-BF80-FF51A0288E65}|Pre_Examen\\Pre_Examen.csproj|c:\\users\\daniq\\documents\\udeo\\desarrollo-web-\\classes\\pre_examen\\pre_examen\\modelos\\producto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4686630E-3F96-4D7A-BF80-FF51A0288E65}|Pre_Examen\\Pre_Examen.csproj|solutionrelative:pre_examen\\modelos\\producto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4686630E-3F96-4D7A-BF80-FF51A0288E65}|Pre_Examen\\Pre_Examen.csproj|c:\\users\\daniq\\documents\\udeo\\desarrollo-web-\\classes\\pre_examen\\pre_examen\\servicios\\servicioinventario.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4686630E-3F96-4D7A-BF80-FF51A0288E65}|Pre_Examen\\Pre_Examen.csproj|solutionrelative:pre_examen\\servicios\\servicioinventario.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4686630E-3F96-4D7A-BF80-FF51A0288E65}|Pre_Examen\\Pre_Examen.csproj|c:\\users\\daniq\\documents\\udeo\\desarrollo-web-\\classes\\pre_examen\\pre_examen\\controllers\\inventariocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4686630E-3F96-4D7A-BF80-FF51A0288E65}|Pre_Examen\\Pre_Examen.csproj|solutionrelative:pre_examen\\controllers\\inventariocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4686630E-3F96-4D7A-BF80-FF51A0288E65}|Pre_Examen\\Pre_Examen.csproj|c:\\users\\daniq\\documents\\udeo\\desarrollo-web-\\classes\\pre_examen\\pre_examen\\interfaz\\iservicioinventario.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4686630E-3F96-4D7A-BF80-FF51A0288E65}|Pre_Examen\\Pre_Examen.csproj|solutionrelative:pre_examen\\interfaz\\iservicioinventario.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 3,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{e506b91c-c606-466a-90a9-123d1d1e12b3}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{b1e99781-ab81-11d0-b683-00aa00a3ee26}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Producto.cs",
+              "DocumentMoniker": "C:\\Users\\daniq\\Documents\\UDEO\\Desarrollo-Web-\\classes\\Pre_Examen\\Pre_Examen\\Modelos\\Producto.cs",
+              "RelativeDocumentMoniker": "Pre_Examen\\Modelos\\Producto.cs",
+              "ToolTip": "C:\\Users\\daniq\\Documents\\UDEO\\Desarrollo-Web-\\classes\\Pre_Examen\\Pre_Examen\\Modelos\\Producto.cs",
+              "RelativeToolTip": "Pre_Examen\\Modelos\\Producto.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-01T13:17:24.22Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "ServicioInventario.cs",
+              "DocumentMoniker": "C:\\Users\\daniq\\Documents\\UDEO\\Desarrollo-Web-\\classes\\Pre_Examen\\Pre_Examen\\Servicios\\ServicioInventario.cs",
+              "RelativeDocumentMoniker": "Pre_Examen\\Servicios\\ServicioInventario.cs",
+              "ToolTip": "C:\\Users\\daniq\\Documents\\UDEO\\Desarrollo-Web-\\classes\\Pre_Examen\\Pre_Examen\\Servicios\\ServicioInventario.cs",
+              "RelativeToolTip": "Pre_Examen\\Servicios\\ServicioInventario.cs",
+              "ViewState": "AgIAADIAAAAAAAAAAAAgwFYAAAAdAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-02-23T04:12:23.464Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "InventarioController.cs",
+              "DocumentMoniker": "C:\\Users\\daniq\\Documents\\UDEO\\Desarrollo-Web-\\classes\\Pre_Examen\\Pre_Examen\\Controllers\\InventarioController.cs",
+              "RelativeDocumentMoniker": "Pre_Examen\\Controllers\\InventarioController.cs",
+              "ToolTip": "C:\\Users\\daniq\\Documents\\UDEO\\Desarrollo-Web-\\classes\\Pre_Examen\\Pre_Examen\\Controllers\\InventarioController.cs",
+              "RelativeToolTip": "Pre_Examen\\Controllers\\InventarioController.cs",
+              "ViewState": "AgIAAB4AAAAAAAAAAAAYwAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-02-23T04:12:15.855Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "IServicioInventario.cs",
+              "DocumentMoniker": "C:\\Users\\daniq\\Documents\\UDEO\\Desarrollo-Web-\\classes\\Pre_Examen\\Pre_Examen\\Interfaz\\IServicioInventario.cs",
+              "RelativeDocumentMoniker": "Pre_Examen\\Interfaz\\IServicioInventario.cs",
+              "ToolTip": "C:\\Users\\daniq\\Documents\\UDEO\\Desarrollo-Web-\\classes\\Pre_Examen\\Pre_Examen\\Interfaz\\IServicioInventario.cs",
+              "RelativeToolTip": "Pre_Examen\\Interfaz\\IServicioInventario.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-02-23T04:01:33.217Z"
+            }
+          ]
+        },
+        {
+          "DockedWidth": 247,
+          "SelectedChildIndex": -1,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{eefa5220-e298-11d0-8f78-00a0c9110057}"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

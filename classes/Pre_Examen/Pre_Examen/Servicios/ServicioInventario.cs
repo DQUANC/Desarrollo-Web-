@@ -71,31 +71,37 @@ namespace Pre_Examen.Servicios
         }
         public async Task<Producto> ActualizarProducto(
             SqlConnection connection,
-            Producto producto)
+            Producto producto, int id_producto)
         {
             try
             {
                 var _producto = @"SELECT * FROM producto WHERE id_producto = @Id";
 
-                var exists =  await connection.QueryFirstOrDefaultAsync<Producto>(
+                var exists = await connection.QueryFirstOrDefaultAsync<Producto>(
                     _producto,
                     new { Id = id_producto }
                 );
 
-                var sql = @"insert into producto(nombre, descripcion, precio, stock, fecha_Creacion)
-                            values (@nombre, @descripcion, @precio, @stock, getdate())";
+                if (exists == null) {
+                    int error = 404;
+                    return error;
+                } else { 
 
-                var newId = await connection.QuerySingleAsync<int>(sql, new
-                {
-                    producto.nombre,
-                    producto.descripcion,
-                    producto.precio,
-                    producto.stock,
-                    producto.fecha_Creacion,
-                });
+                    var sql = @"insert into producto(nombre, descripcion, precio, stock, fecha_Creacion)
+                                values (@nombre, @descripcion, @precio, @stock, getdate())";
 
-                producto.id_producto = newId;
-                return producto;
+                    var newId = await connection.QuerySingleAsync<int>(sql, new
+                    {
+                        producto.nombre,
+                        producto.descripcion,
+                        producto.precio,
+                        producto.stock,
+                        producto.fecha_Creacion,
+                    });
+
+                    producto.id_producto = newId;
+                    return producto;
+                }
             }
             catch (Exception ex)
             {
