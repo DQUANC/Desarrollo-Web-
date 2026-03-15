@@ -3,12 +3,24 @@
   "WorkspaceRootPath": "C:\\Users\\daniq\\Documents\\UDEO\\Desarrollo-Web-\\classes\\Clase_7\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{8A20E0C4-E5CB-4944-8566-C2D474BF7983}|Clase_7\\Clase_7.csproj|c:\\users\\daniq\\documents\\udeo\\desarrollo-web-\\classes\\clase_7\\clase_7\\modelo\\cliente.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{8A20E0C4-E5CB-4944-8566-C2D474BF7983}|Clase_7\\Clase_7.csproj|solutionrelative:clase_7\\modelo\\cliente.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{8A20E0C4-E5CB-4944-8566-C2D474BF7983}|Clase_7\\Clase_7.csproj|c:\\users\\daniq\\documents\\udeo\\desarrollo-web-\\classes\\clase_7\\clase_7\\controllers\\clientecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8A20E0C4-E5CB-4944-8566-C2D474BF7983}|Clase_7\\Clase_7.csproj|solutionrelative:clase_7\\controllers\\clientecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8A20E0C4-E5CB-4944-8566-C2D474BF7983}|Clase_7\\Clase_7.csproj|c:\\users\\daniq\\documents\\udeo\\desarrollo-web-\\classes\\clase_7\\clase_7\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8A20E0C4-E5CB-4944-8566-C2D474BF7983}|Clase_7\\Clase_7.csproj|solutionrelative:clase_7\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8A20E0C4-E5CB-4944-8566-C2D474BF7983}|Clase_7\\Clase_7.csproj|c:\\users\\daniq\\documents\\udeo\\desarrollo-web-\\classes\\clase_7\\clase_7\\servicio\\clienteservicio.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8A20E0C4-E5CB-4944-8566-C2D474BF7983}|Clase_7\\Clase_7.csproj|solutionrelative:clase_7\\servicio\\clienteservicio.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{8A20E0C4-E5CB-4944-8566-C2D474BF7983}|Clase_7\\Clase_7.csproj|c:\\users\\daniq\\documents\\udeo\\desarrollo-web-\\classes\\clase_7\\clase_7\\interfaz\\iclienteservicio.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{8A20E0C4-E5CB-4944-8566-C2D474BF7983}|Clase_7\\Clase_7.csproj|solutionrelative:clase_7\\interfaz\\iclienteservicio.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8A20E0C4-E5CB-4944-8566-C2D474BF7983}|Clase_7\\Clase_7.csproj|c:\\users\\daniq\\documents\\udeo\\desarrollo-web-\\classes\\clase_7\\clase_7\\modelo\\cliente.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8A20E0C4-E5CB-4944-8566-C2D474BF7983}|Clase_7\\Clase_7.csproj|solutionrelative:clase_7\\modelo\\cliente.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -20,6 +32,19 @@
           "DockedWidth": 200,
           "SelectedChildIndex": 4,
           "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\daniq\\Documents\\UDEO\\Desarrollo-Web-\\classes\\Clase_7\\Clase_7\\Program.cs",
+              "RelativeDocumentMoniker": "Clase_7\\Program.cs",
+              "ToolTip": "C:\\Users\\daniq\\Documents\\UDEO\\Desarrollo-Web-\\classes\\Clase_7\\Clase_7\\Program.cs",
+              "RelativeToolTip": "Clase_7\\Program.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-08T14:16:48.205Z",
+              "EditorCaption": ""
+            },
             {
               "$type": "Bookmark",
               "Name": "ST:0:0:{e506b91c-c606-466a-90a9-123d1d1e12b3}"
@@ -34,7 +59,33 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 0,
+              "Title": "ClienteController.cs",
+              "DocumentMoniker": "C:\\Users\\daniq\\Documents\\UDEO\\Desarrollo-Web-\\classes\\Clase_7\\Clase_7\\Controllers\\ClienteController.cs",
+              "RelativeDocumentMoniker": "Clase_7\\Controllers\\ClienteController.cs",
+              "ToolTip": "C:\\Users\\daniq\\Documents\\UDEO\\Desarrollo-Web-\\classes\\Clase_7\\Clase_7\\Controllers\\ClienteController.cs",
+              "RelativeToolTip": "Clase_7\\Controllers\\ClienteController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABsAAAAVAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-08T14:12:20.975Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "ClienteServicio.cs",
+              "DocumentMoniker": "C:\\Users\\daniq\\Documents\\UDEO\\Desarrollo-Web-\\classes\\Clase_7\\Clase_7\\Servicio\\ClienteServicio.cs",
+              "RelativeDocumentMoniker": "Clase_7\\Servicio\\ClienteServicio.cs",
+              "ToolTip": "C:\\Users\\daniq\\Documents\\UDEO\\Desarrollo-Web-\\classes\\Clase_7\\Clase_7\\Servicio\\ClienteServicio.cs",
+              "RelativeToolTip": "Clase_7\\Servicio\\ClienteServicio.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAyAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-08T14:09:07.757Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
               "Title": "IClienteServicio.cs",
               "DocumentMoniker": "C:\\Users\\daniq\\Documents\\UDEO\\Desarrollo-Web-\\classes\\Clase_7\\Clase_7\\Interfaz\\IClienteServicio.cs",
               "RelativeDocumentMoniker": "Clase_7\\Interfaz\\IClienteServicio.cs",
@@ -47,13 +98,13 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 4,
               "Title": "Cliente.cs",
               "DocumentMoniker": "C:\\Users\\daniq\\Documents\\UDEO\\Desarrollo-Web-\\classes\\Clase_7\\Clase_7\\Modelo\\Cliente.cs",
               "RelativeDocumentMoniker": "Clase_7\\Modelo\\Cliente.cs",
               "ToolTip": "C:\\Users\\daniq\\Documents\\UDEO\\Desarrollo-Web-\\classes\\Clase_7\\Clase_7\\Modelo\\Cliente.cs",
               "RelativeToolTip": "Clase_7\\Modelo\\Cliente.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAEAAAAsAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAArAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-03-08T14:02:48.44Z",
               "EditorCaption": ""

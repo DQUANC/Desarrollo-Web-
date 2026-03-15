@@ -35,5 +35,5 @@ INSERT INTO pedidos (id_cliente, id_producto, cantidad)
 VALUES (1, 1, 1), (2, 2, 2); 
 
 SELECT clientes.nombre, productos.nombre_producto, pedidos.cantidad, pedidos.fecha FROM pedidos 
-JOIN clientes ON pedidos.id_cliente = clientes.id_cliente 
+JOIN clientes ON pedidos.id_cliente = clientes.id_cliente 7
 JOIN productos ON pedidos.id_producto = productos.id_producto;

@@ -1,0 +1,6 @@
+@ProyectoSistemaDeVentasConControlDeStock_HostAddress = http://localhost:5157
+
+GET {{ProyectoSistemaDeVentasConControlDeStock_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###

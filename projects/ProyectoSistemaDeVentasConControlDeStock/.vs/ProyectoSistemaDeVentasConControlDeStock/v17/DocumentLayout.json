@@ -1,0 +1,144 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\daniq\\Documents\\UDEO\\Desarrollo-Web-\\projects\\ProyectoSistemaDeVentasConControlDeStock\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{65114E8E-1D40-4738-AB0A-A3C01A184B87}|ProyectoSistemaDeVentasConControlDeStock\\ProyectoSistemaDeVentasConControlDeStock.csproj|c:\\users\\daniq\\documents\\udeo\\desarrollo-web-\\projects\\proyectosistemadeventasconcontroldestock\\proyectosistemadeventasconcontroldestock\\controllers\\productocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{65114E8E-1D40-4738-AB0A-A3C01A184B87}|ProyectoSistemaDeVentasConControlDeStock\\ProyectoSistemaDeVentasConControlDeStock.csproj|solutionrelative:proyectosistemadeventasconcontroldestock\\controllers\\productocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{65114E8E-1D40-4738-AB0A-A3C01A184B87}|ProyectoSistemaDeVentasConControlDeStock\\ProyectoSistemaDeVentasConControlDeStock.csproj|c:\\users\\daniq\\documents\\udeo\\desarrollo-web-\\projects\\proyectosistemadeventasconcontroldestock\\proyectosistemadeventasconcontroldestock\\models\\productomodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{65114E8E-1D40-4738-AB0A-A3C01A184B87}|ProyectoSistemaDeVentasConControlDeStock\\ProyectoSistemaDeVentasConControlDeStock.csproj|solutionrelative:proyectosistemadeventasconcontroldestock\\models\\productomodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{65114E8E-1D40-4738-AB0A-A3C01A184B87}|ProyectoSistemaDeVentasConControlDeStock\\ProyectoSistemaDeVentasConControlDeStock.csproj|c:\\users\\daniq\\documents\\udeo\\desarrollo-web-\\projects\\proyectosistemadeventasconcontroldestock\\proyectosistemadeventasconcontroldestock\\services\\productoservicio.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{65114E8E-1D40-4738-AB0A-A3C01A184B87}|ProyectoSistemaDeVentasConControlDeStock\\ProyectoSistemaDeVentasConControlDeStock.csproj|solutionrelative:proyectosistemadeventasconcontroldestock\\services\\productoservicio.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{65114E8E-1D40-4738-AB0A-A3C01A184B87}|ProyectoSistemaDeVentasConControlDeStock\\ProyectoSistemaDeVentasConControlDeStock.csproj|c:\\users\\daniq\\documents\\udeo\\desarrollo-web-\\projects\\proyectosistemadeventasconcontroldestock\\proyectosistemadeventasconcontroldestock\\interfaces\\iproductoservicio.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{65114E8E-1D40-4738-AB0A-A3C01A184B87}|ProyectoSistemaDeVentasConControlDeStock\\ProyectoSistemaDeVentasConControlDeStock.csproj|solutionrelative:proyectosistemadeventasconcontroldestock\\interfaces\\iproductoservicio.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{65114E8E-1D40-4738-AB0A-A3C01A184B87}|ProyectoSistemaDeVentasConControlDeStock\\ProyectoSistemaDeVentasConControlDeStock.csproj|c:\\users\\daniq\\documents\\udeo\\desarrollo-web-\\projects\\proyectosistemadeventasconcontroldestock\\proyectosistemadeventasconcontroldestock\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{65114E8E-1D40-4738-AB0A-A3C01A184B87}|ProyectoSistemaDeVentasConControlDeStock\\ProyectoSistemaDeVentasConControlDeStock.csproj|solutionrelative:proyectosistemadeventasconcontroldestock\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{65114E8E-1D40-4738-AB0A-A3C01A184B87}|ProyectoSistemaDeVentasConControlDeStock\\ProyectoSistemaDeVentasConControlDeStock.csproj|c:\\users\\daniq\\documents\\udeo\\desarrollo-web-\\projects\\proyectosistemadeventasconcontroldestock\\proyectosistemadeventasconcontroldestock\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{65114E8E-1D40-4738-AB0A-A3C01A184B87}|ProyectoSistemaDeVentasConControlDeStock\\ProyectoSistemaDeVentasConControlDeStock.csproj|solutionrelative:proyectosistemadeventasconcontroldestock\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 247,
+          "SelectedChildIndex": 8,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{e506b91c-c606-466a-90a9-123d1d1e12b3}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{b1e99781-ab81-11d0-b683-00aa00a3ee26}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "ProductoModel.cs",
+              "DocumentMoniker": "C:\\Users\\daniq\\Documents\\UDEO\\Desarrollo-Web-\\projects\\ProyectoSistemaDeVentasConControlDeStock\\ProyectoSistemaDeVentasConControlDeStock\\Models\\ProductoModel.cs",
+              "RelativeDocumentMoniker": "ProyectoSistemaDeVentasConControlDeStock\\Models\\ProductoModel.cs",
+              "ToolTip": "C:\\Users\\daniq\\Documents\\UDEO\\Desarrollo-Web-\\projects\\ProyectoSistemaDeVentasConControlDeStock\\ProyectoSistemaDeVentasConControlDeStock\\Models\\ProductoModel.cs",
+              "RelativeToolTip": "ProyectoSistemaDeVentasConControlDeStock\\Models\\ProductoModel.cs",
+              "ViewState": "AgIAAAQAAAAAAAAAAAAswBEAAAAWAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-15T14:27:47.063Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "C:\\Users\\daniq\\Documents\\UDEO\\Desarrollo-Web-\\projects\\ProyectoSistemaDeVentasConControlDeStock\\ProyectoSistemaDeVentasConControlDeStock\\appsettings.json",
+              "RelativeDocumentMoniker": "ProyectoSistemaDeVentasConControlDeStock\\appsettings.json",
+              "ToolTip": "C:\\Users\\daniq\\Documents\\UDEO\\Desarrollo-Web-\\projects\\ProyectoSistemaDeVentasConControlDeStock\\ProyectoSistemaDeVentasConControlDeStock\\appsettings.json",
+              "RelativeToolTip": "ProyectoSistemaDeVentasConControlDeStock\\appsettings.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2026-03-15T14:28:28.331Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\daniq\\Documents\\UDEO\\Desarrollo-Web-\\projects\\ProyectoSistemaDeVentasConControlDeStock\\ProyectoSistemaDeVentasConControlDeStock\\Program.cs",
+              "RelativeDocumentMoniker": "ProyectoSistemaDeVentasConControlDeStock\\Program.cs",
+              "ToolTip": "C:\\Users\\daniq\\Documents\\UDEO\\Desarrollo-Web-\\projects\\ProyectoSistemaDeVentasConControlDeStock\\ProyectoSistemaDeVentasConControlDeStock\\Program.cs",
+              "RelativeToolTip": "ProyectoSistemaDeVentasConControlDeStock\\Program.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAEAAAA6AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-15T14:11:49.105Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "ProductoServicio.cs",
+              "DocumentMoniker": "C:\\Users\\daniq\\Documents\\UDEO\\Desarrollo-Web-\\projects\\ProyectoSistemaDeVentasConControlDeStock\\ProyectoSistemaDeVentasConControlDeStock\\Services\\ProductoServicio.cs",
+              "RelativeDocumentMoniker": "ProyectoSistemaDeVentasConControlDeStock\\Services\\ProductoServicio.cs",
+              "ToolTip": "C:\\Users\\daniq\\Documents\\UDEO\\Desarrollo-Web-\\projects\\ProyectoSistemaDeVentasConControlDeStock\\ProyectoSistemaDeVentasConControlDeStock\\Services\\ProductoServicio.cs",
+              "RelativeToolTip": "ProyectoSistemaDeVentasConControlDeStock\\Services\\ProductoServicio.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAMAAAA6AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-15T14:11:01.08Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "IProductoServicio.cs",
+              "DocumentMoniker": "C:\\Users\\daniq\\Documents\\UDEO\\Desarrollo-Web-\\projects\\ProyectoSistemaDeVentasConControlDeStock\\ProyectoSistemaDeVentasConControlDeStock\\Interfaces\\IProductoServicio.cs",
+              "RelativeDocumentMoniker": "ProyectoSistemaDeVentasConControlDeStock\\Interfaces\\IProductoServicio.cs",
+              "ToolTip": "C:\\Users\\daniq\\Documents\\UDEO\\Desarrollo-Web-\\projects\\ProyectoSistemaDeVentasConControlDeStock\\ProyectoSistemaDeVentasConControlDeStock\\Interfaces\\IProductoServicio.cs",
+              "RelativeToolTip": "ProyectoSistemaDeVentasConControlDeStock\\Interfaces\\IProductoServicio.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAA7AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-15T14:07:01.75Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "ProductoController.cs",
+              "DocumentMoniker": "C:\\Users\\daniq\\Documents\\UDEO\\Desarrollo-Web-\\projects\\ProyectoSistemaDeVentasConControlDeStock\\ProyectoSistemaDeVentasConControlDeStock\\Controllers\\ProductoController.cs",
+              "RelativeDocumentMoniker": "ProyectoSistemaDeVentasConControlDeStock\\Controllers\\ProductoController.cs",
+              "ToolTip": "C:\\Users\\daniq\\Documents\\UDEO\\Desarrollo-Web-\\projects\\ProyectoSistemaDeVentasConControlDeStock\\ProyectoSistemaDeVentasConControlDeStock\\Controllers\\ProductoController.cs",
+              "RelativeToolTip": "ProyectoSistemaDeVentasConControlDeStock\\Controllers\\ProductoController.cs",
+              "ViewState": "AgIAAAwAAAAAAAAAAAAvwBoAAAAMAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-15T14:05:44.568Z",
+              "EditorCaption": ""
+            }
+          ]
+        },
+        {
+          "DockedWidth": 247,
+          "SelectedChildIndex": -1,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{eefa5220-e298-11d0-8f78-00a0c9110057}"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
