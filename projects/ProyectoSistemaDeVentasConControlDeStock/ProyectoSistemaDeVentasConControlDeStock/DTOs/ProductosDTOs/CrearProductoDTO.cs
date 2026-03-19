@@ -11,7 +11,7 @@ namespace ProyectoSistemaDeVentasConControlDeStock.DTOs.ProductosDTOs
 
         [Required]
         [Column("precio")]
-        public int precio { get; set; }
+        public decimal precio { get; set; }
 
         [Required]
         [Column("stock")]

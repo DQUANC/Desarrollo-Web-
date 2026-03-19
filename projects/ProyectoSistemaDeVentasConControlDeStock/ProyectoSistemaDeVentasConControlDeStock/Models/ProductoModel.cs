@@ -6,8 +6,8 @@ namespace ProyectoSistemaDeVentasConControlDeStock.Models
     public class ProductoModel
     {
         [Key]
-        [Column("SKU_producto")]
-        public int SKU_producto { get; set; }
+        [Column("sku_producto")]
+        public int sku_producto { get; set; }
 
         [Required]
         [Column("nombre_producto")]

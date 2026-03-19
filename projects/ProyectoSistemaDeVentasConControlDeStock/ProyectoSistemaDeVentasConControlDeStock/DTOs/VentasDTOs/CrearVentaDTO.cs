@@ -1,23 +1,17 @@
 ﻿using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
 
-namespace ProyectoSistemaDeVentasConControlDeStock.Models
+namespace ProyectoSistemaDeVentasConControlDeStock.DTOs.VentasDTOs
 {
-    public class VentaModel
+    public class CrearVentaDTO
     {
-        [Key]
-        [Column("id_venta")]
-        public int id_venta { get; set; }
-
         [Required]
         [Column("sku_producto")]
         public int sku_producto { get; set; }
 
         [Required]
+        [Range(1, int.MaxValue, ErrorMessage = "La cantidad debe ser mayor a 0.")]
         [Column("cantidad")]
         public int cantidad { get; set; }
-
-        [Column("fecha")]
-        public DateTime fecha { get; set; }
     }
 }
