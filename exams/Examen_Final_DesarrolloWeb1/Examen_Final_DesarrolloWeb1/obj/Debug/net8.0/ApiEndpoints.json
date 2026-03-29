@@ -1,0 +1,48 @@
+[
+  {
+    "ContainingType": "Examen_Final_DesarrolloWeb1.Controllers.EventoController",
+    "Method": "GetAll",
+    "RelativePath": "api/eventos",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Examen_Final_DesarrolloWeb1.Controllers.InscripcionController",
+    "Method": "GetAll",
+    "RelativePath": "api/inscripciones",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Examen_Final_DesarrolloWeb1.Controllers.InscripcionController",
+    "Method": "Registrar",
+    "RelativePath": "api/inscripciones/registrar",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "request",
+        "Type": "Examen_Final_DesarrolloWeb1.DTOs.InscripcionRequestDTO",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Examen_Final_DesarrolloWeb1.Controllers.PersonaController",
+    "Method": "GetAll",
+    "RelativePath": "api/personas",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  }
+]

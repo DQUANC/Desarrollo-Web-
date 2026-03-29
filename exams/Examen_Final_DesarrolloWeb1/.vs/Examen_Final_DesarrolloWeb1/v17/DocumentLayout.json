@@ -1,0 +1,195 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\daniq\\Documents\\UDEO\\Desarrollo-Web-\\exams\\Examen_Final_DesarrolloWeb1\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{64A5CDE2-4D3A-493D-AA93-F52446342F2E}|Examen_Final_DesarrolloWeb1\\Examen_Final_DesarrolloWeb1.csproj|c:\\users\\daniq\\documents\\udeo\\desarrollo-web-\\exams\\examen_final_desarrolloweb1\\examen_final_desarrolloweb1\\controllers\\eventocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{64A5CDE2-4D3A-493D-AA93-F52446342F2E}|Examen_Final_DesarrolloWeb1\\Examen_Final_DesarrolloWeb1.csproj|solutionrelative:examen_final_desarrolloweb1\\controllers\\eventocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{64A5CDE2-4D3A-493D-AA93-F52446342F2E}|Examen_Final_DesarrolloWeb1\\Examen_Final_DesarrolloWeb1.csproj|c:\\users\\daniq\\documents\\udeo\\desarrollo-web-\\exams\\examen_final_desarrolloweb1\\examen_final_desarrolloweb1\\controllers\\inscripcioncontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{64A5CDE2-4D3A-493D-AA93-F52446342F2E}|Examen_Final_DesarrolloWeb1\\Examen_Final_DesarrolloWeb1.csproj|solutionrelative:examen_final_desarrolloweb1\\controllers\\inscripcioncontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{64A5CDE2-4D3A-493D-AA93-F52446342F2E}|Examen_Final_DesarrolloWeb1\\Examen_Final_DesarrolloWeb1.csproj|c:\\users\\daniq\\documents\\udeo\\desarrollo-web-\\exams\\examen_final_desarrolloweb1\\examen_final_desarrolloweb1\\controllers\\personacontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{64A5CDE2-4D3A-493D-AA93-F52446342F2E}|Examen_Final_DesarrolloWeb1\\Examen_Final_DesarrolloWeb1.csproj|solutionrelative:examen_final_desarrolloweb1\\controllers\\personacontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{64A5CDE2-4D3A-493D-AA93-F52446342F2E}|Examen_Final_DesarrolloWeb1\\Examen_Final_DesarrolloWeb1.csproj|c:\\users\\daniq\\documents\\udeo\\desarrollo-web-\\exams\\examen_final_desarrolloweb1\\examen_final_desarrolloweb1\\services\\inscripcionservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{64A5CDE2-4D3A-493D-AA93-F52446342F2E}|Examen_Final_DesarrolloWeb1\\Examen_Final_DesarrolloWeb1.csproj|solutionrelative:examen_final_desarrolloweb1\\services\\inscripcionservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{64A5CDE2-4D3A-493D-AA93-F52446342F2E}|Examen_Final_DesarrolloWeb1\\Examen_Final_DesarrolloWeb1.csproj|c:\\users\\daniq\\documents\\udeo\\desarrollo-web-\\exams\\examen_final_desarrolloweb1\\examen_final_desarrolloweb1\\services\\personaservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{64A5CDE2-4D3A-493D-AA93-F52446342F2E}|Examen_Final_DesarrolloWeb1\\Examen_Final_DesarrolloWeb1.csproj|solutionrelative:examen_final_desarrolloweb1\\services\\personaservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{64A5CDE2-4D3A-493D-AA93-F52446342F2E}|Examen_Final_DesarrolloWeb1\\Examen_Final_DesarrolloWeb1.csproj|c:\\users\\daniq\\documents\\udeo\\desarrollo-web-\\exams\\examen_final_desarrolloweb1\\examen_final_desarrolloweb1\\services\\eventoservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{64A5CDE2-4D3A-493D-AA93-F52446342F2E}|Examen_Final_DesarrolloWeb1\\Examen_Final_DesarrolloWeb1.csproj|solutionrelative:examen_final_desarrolloweb1\\services\\eventoservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{64A5CDE2-4D3A-493D-AA93-F52446342F2E}|Examen_Final_DesarrolloWeb1\\Examen_Final_DesarrolloWeb1.csproj|c:\\users\\daniq\\documents\\udeo\\desarrollo-web-\\exams\\examen_final_desarrolloweb1\\examen_final_desarrolloweb1\\interfaces\\iinscripcionservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{64A5CDE2-4D3A-493D-AA93-F52446342F2E}|Examen_Final_DesarrolloWeb1\\Examen_Final_DesarrolloWeb1.csproj|solutionrelative:examen_final_desarrolloweb1\\interfaces\\iinscripcionservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{64A5CDE2-4D3A-493D-AA93-F52446342F2E}|Examen_Final_DesarrolloWeb1\\Examen_Final_DesarrolloWeb1.csproj|c:\\users\\daniq\\documents\\udeo\\desarrollo-web-\\exams\\examen_final_desarrolloweb1\\examen_final_desarrolloweb1\\interfaces\\ipersonaservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{64A5CDE2-4D3A-493D-AA93-F52446342F2E}|Examen_Final_DesarrolloWeb1\\Examen_Final_DesarrolloWeb1.csproj|solutionrelative:examen_final_desarrolloweb1\\interfaces\\ipersonaservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{64A5CDE2-4D3A-493D-AA93-F52446342F2E}|Examen_Final_DesarrolloWeb1\\Examen_Final_DesarrolloWeb1.csproj|c:\\users\\daniq\\documents\\udeo\\desarrollo-web-\\exams\\examen_final_desarrolloweb1\\examen_final_desarrolloweb1\\interfaces\\ieventoservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{64A5CDE2-4D3A-493D-AA93-F52446342F2E}|Examen_Final_DesarrolloWeb1\\Examen_Final_DesarrolloWeb1.csproj|solutionrelative:examen_final_desarrolloweb1\\interfaces\\ieventoservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 4,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{e506b91c-c606-466a-90a9-123d1d1e12b3}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{b1e99781-ab81-11d0-b683-00aa00a3ee26}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "PersonaController.cs",
+              "DocumentMoniker": "C:\\Users\\daniq\\Documents\\UDEO\\Desarrollo-Web-\\exams\\Examen_Final_DesarrolloWeb1\\Examen_Final_DesarrolloWeb1\\Controllers\\PersonaController.cs",
+              "RelativeDocumentMoniker": "Examen_Final_DesarrolloWeb1\\Controllers\\PersonaController.cs",
+              "ToolTip": "C:\\Users\\daniq\\Documents\\UDEO\\Desarrollo-Web-\\exams\\Examen_Final_DesarrolloWeb1\\Examen_Final_DesarrolloWeb1\\Controllers\\PersonaController.cs",
+              "RelativeToolTip": "Examen_Final_DesarrolloWeb1\\Controllers\\PersonaController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABcAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-29T14:15:59.186Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "EventoController.cs",
+              "DocumentMoniker": "C:\\Users\\daniq\\Documents\\UDEO\\Desarrollo-Web-\\exams\\Examen_Final_DesarrolloWeb1\\Examen_Final_DesarrolloWeb1\\Controllers\\EventoController.cs",
+              "RelativeDocumentMoniker": "Examen_Final_DesarrolloWeb1\\Controllers\\EventoController.cs",
+              "ToolTip": "C:\\Users\\daniq\\Documents\\UDEO\\Desarrollo-Web-\\exams\\Examen_Final_DesarrolloWeb1\\Examen_Final_DesarrolloWeb1\\Controllers\\EventoController.cs",
+              "RelativeToolTip": "Examen_Final_DesarrolloWeb1\\Controllers\\EventoController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-29T14:15:34.229Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "PersonaService.cs",
+              "DocumentMoniker": "C:\\Users\\daniq\\Documents\\UDEO\\Desarrollo-Web-\\exams\\Examen_Final_DesarrolloWeb1\\Examen_Final_DesarrolloWeb1\\Services\\PersonaService.cs",
+              "RelativeDocumentMoniker": "Examen_Final_DesarrolloWeb1\\Services\\PersonaService.cs",
+              "ToolTip": "C:\\Users\\daniq\\Documents\\UDEO\\Desarrollo-Web-\\exams\\Examen_Final_DesarrolloWeb1\\Examen_Final_DesarrolloWeb1\\Services\\PersonaService.cs",
+              "RelativeToolTip": "Examen_Final_DesarrolloWeb1\\Services\\PersonaService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABMAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-29T14:12:28.175Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "EventoService.cs",
+              "DocumentMoniker": "C:\\Users\\daniq\\Documents\\UDEO\\Desarrollo-Web-\\exams\\Examen_Final_DesarrolloWeb1\\Examen_Final_DesarrolloWeb1\\Services\\EventoService.cs",
+              "RelativeDocumentMoniker": "Examen_Final_DesarrolloWeb1\\Services\\EventoService.cs",
+              "ToolTip": "C:\\Users\\daniq\\Documents\\UDEO\\Desarrollo-Web-\\exams\\Examen_Final_DesarrolloWeb1\\Examen_Final_DesarrolloWeb1\\Services\\EventoService.cs",
+              "RelativeToolTip": "Examen_Final_DesarrolloWeb1\\Services\\EventoService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABgAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-29T14:12:07.603Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "IPersonaService.cs",
+              "DocumentMoniker": "C:\\Users\\daniq\\Documents\\UDEO\\Desarrollo-Web-\\exams\\Examen_Final_DesarrolloWeb1\\Examen_Final_DesarrolloWeb1\\Interfaces\\IPersonaService.cs",
+              "RelativeDocumentMoniker": "Examen_Final_DesarrolloWeb1\\Interfaces\\IPersonaService.cs",
+              "ToolTip": "C:\\Users\\daniq\\Documents\\UDEO\\Desarrollo-Web-\\exams\\Examen_Final_DesarrolloWeb1\\Examen_Final_DesarrolloWeb1\\Interfaces\\IPersonaService.cs",
+              "RelativeToolTip": "Examen_Final_DesarrolloWeb1\\Interfaces\\IPersonaService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-29T14:11:11.473Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "IEventoService.cs",
+              "DocumentMoniker": "C:\\Users\\daniq\\Documents\\UDEO\\Desarrollo-Web-\\exams\\Examen_Final_DesarrolloWeb1\\Examen_Final_DesarrolloWeb1\\Interfaces\\IEventoService.cs",
+              "RelativeDocumentMoniker": "Examen_Final_DesarrolloWeb1\\Interfaces\\IEventoService.cs",
+              "ToolTip": "C:\\Users\\daniq\\Documents\\UDEO\\Desarrollo-Web-\\exams\\Examen_Final_DesarrolloWeb1\\Examen_Final_DesarrolloWeb1\\Interfaces\\IEventoService.cs",
+              "RelativeToolTip": "Examen_Final_DesarrolloWeb1\\Interfaces\\IEventoService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-29T14:10:50.065Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "InscripcionController.cs",
+              "DocumentMoniker": "C:\\Users\\daniq\\Documents\\UDEO\\Desarrollo-Web-\\exams\\Examen_Final_DesarrolloWeb1\\Examen_Final_DesarrolloWeb1\\Controllers\\InscripcionController.cs",
+              "RelativeDocumentMoniker": "Examen_Final_DesarrolloWeb1\\Controllers\\InscripcionController.cs",
+              "ToolTip": "C:\\Users\\daniq\\Documents\\UDEO\\Desarrollo-Web-\\exams\\Examen_Final_DesarrolloWeb1\\Examen_Final_DesarrolloWeb1\\Controllers\\InscripcionController.cs",
+              "RelativeToolTip": "Examen_Final_DesarrolloWeb1\\Controllers\\InscripcionController.cs",
+              "ViewState": "AgIAAAwAAAAAAAAAAAA/wC4AAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-29T13:53:12.687Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "InscripcionService.cs",
+              "DocumentMoniker": "C:\\Users\\daniq\\Documents\\UDEO\\Desarrollo-Web-\\exams\\Examen_Final_DesarrolloWeb1\\Examen_Final_DesarrolloWeb1\\Services\\InscripcionService.cs",
+              "RelativeDocumentMoniker": "Examen_Final_DesarrolloWeb1\\Services\\InscripcionService.cs",
+              "ToolTip": "C:\\Users\\daniq\\Documents\\UDEO\\Desarrollo-Web-\\exams\\Examen_Final_DesarrolloWeb1\\Examen_Final_DesarrolloWeb1\\Services\\InscripcionService.cs",
+              "RelativeToolTip": "Examen_Final_DesarrolloWeb1\\Services\\InscripcionService.cs",
+              "ViewState": "AgIAAB4AAAAAAAAAAAAcwC4AAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-29T13:52:39.709Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "IInscripcionService.cs",
+              "DocumentMoniker": "C:\\Users\\daniq\\Documents\\UDEO\\Desarrollo-Web-\\exams\\Examen_Final_DesarrolloWeb1\\Examen_Final_DesarrolloWeb1\\Interfaces\\IInscripcionService.cs",
+              "RelativeDocumentMoniker": "Examen_Final_DesarrolloWeb1\\Interfaces\\IInscripcionService.cs",
+              "ToolTip": "C:\\Users\\daniq\\Documents\\UDEO\\Desarrollo-Web-\\exams\\Examen_Final_DesarrolloWeb1\\Examen_Final_DesarrolloWeb1\\Interfaces\\IInscripcionService.cs",
+              "RelativeToolTip": "Examen_Final_DesarrolloWeb1\\Interfaces\\IInscripcionService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-29T13:44:55.223Z",
+              "EditorCaption": ""
+            }
+          ]
+        },
+        {
+          "DockedWidth": 247,
+          "SelectedChildIndex": -1,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{eefa5220-e298-11d0-8f78-00a0c9110057}"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
