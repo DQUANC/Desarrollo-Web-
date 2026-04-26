@@ -1,21 +1,114 @@
-<h1>Hello world</h1>
+<link rel="stylesheet" href="app.css">
 
-<p>{{titulo}}</p>
+<div class="page">
 
-<p>Variables -----------------------------</p>
-<p>El nombre de la persona es: {{nombre}} {{apellido}}</p>
+  <!-- Hero -->
+  <div class="hero">
+    <h1>Hello world</h1>
+    <p>{{ titulo }}</p>
+  </div>
 
-<p>Operaciones en html-----------------------------</p>
-<p>La suma de dos numeros es: {{2+2}}</p>
+  <!-- Variables -->
+  <div class="section">
+    <div class="section-label">
+      <span class="badge badge-purple">Variables</span>
+    </div>
+    <div class="row">
+      <span class="key">Nombre completo</span>
+      <span class="val">{{ nombre }} {{ apellido }}</span>
+    </div>
+  </div>
 
-<p>Funcion -----------------------------</p>
-<p>El doble del numero es: {{DuplicarNumero(5)}}</p>
+  <!-- Operaciones -->
+  <div class="section">
+    <div class="section-label">
+      <span class="badge badge-teal">Operaciones</span>
+    </div>
+    <div class="row">
+      <span class="key">Suma en HTML</span>
+      <span class="val">{{ 2 + 2 }}</span>
+    </div>
+  </div>
 
-<p>Funcion -----------------------------</p>
-<p>La suma con funcion de dos numeros es: {{SumarNumeros(5,9)}}</p>
+  <!-- Funciones -->
+  <div class="section">
+    <div class="section-label">
+      <span class="badge badge-amber">Funciones</span>
+    </div>
+    <div class="row">
+      <span class="key">DuplicarNumero(5)</span>
+      <span class="val">{{ DuplicarNumero(5) }}</span>
+    </div>
+    <div class="row">
+      <span class="key">SumarNumeros(5, 9)</span>
+      <span class="val">{{ SumarNumeros(5, 9) }}</span>
+    </div>
+    <div class="row">
+      <span class="key">ConcatenarNombres(...)</span>
+      <span class="val">{{ ConcatenarNombres('Pedro', 'Alejandro', 'Fernandez', 'Hernandez') }}</span>
+    </div>
+  </div>
 
-<p>Pelicula en arreglo -----------------------------</p>
-<p>El pelicula es: {{pelicula.titulo}}</p>
-<p>La fecha de lanzamiento es: {{pelicula.FechaDeLanzamiento}}</p>
-<p>El precio de la pelicula es: Q{{pelicula.precio}}</p>
-<router-outlet></router-outlet>
+  <!-- Objeto pelicula -->
+  <div class="section">
+    <div class="section-label">
+      <span class="badge badge-teal">Objeto — pelicula</span>
+    </div>
+    <div class="row">
+      <span class="key">Título</span>
+      <span class="val">{{ pelicula.titulo }}</span>
+    </div>
+    <div class="row">
+      <span class="key">Fecha de lanzamiento</span>
+      <span class="val">{{ pelicula.FechaDeLanzamiento }}</span>
+    </div>
+    <div class="row">
+      <span class="key">Precio</span>
+      <span class="val">Q{{ pelicula.precio }}</span>
+    </div>
+  </div>
+
+  <!-- Array arregloPelicula -->
+  <div class="section">
+    <div class="section-label">
+      <span class="badge badge-purple">Array — arregloPelicula</span>
+    </div>
+    <div class="card-grid">
+      @for(pelicula of arregloPelicula; track $index) {
+        <div class="card card-movie">
+          <span class="card-index">#{{ $index + 1 }}</span>
+          <div class="card-title">{{ pelicula.titulo }}</div>
+          <div class="card-date">{{ pelicula.FechaDeLanzamiento }}</div>
+          <div class="card-footer">
+            <span class="card-price-label">Precio</span>
+            <span class="card-price">Q{{ pelicula.precio }}</span>
+          </div>
+        </div>
+      }
+    </div>
+  </div>
+
+  <!-- Array arregloVideojuego -->
+  <div class="section">
+    <div class="section-label">
+      <span class="badge badge-amber">Array — arregloVideojuego</span>
+    </div>
+    <div class="card-grid">
+      @for(juego of arregloVideojuego; track $index) {
+        <div class="card card-game">
+          <img class="card-img" [src]="juego.imagen" [alt]="juego.titulo">
+          <span class="card-index">#{{ $index + 1 }}</span>
+          <div class="card-title">{{ juego.titulo }}</div>
+          <div class="card-date">{{ juego.fechaLanzamiento }}</div>
+          <div class="card-footer">
+            <span class="card-price-label">Precio</span>
+            <span class="card-price">Q{{ juego.precio }}</span>
+          </div>
+        </div>
+      }
+    </div>
+  </div>
+
+  <router-outlet></router-outlet>
+
+</div>
