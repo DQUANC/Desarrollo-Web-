@@ -1,0 +1,35 @@
+<div class="page">
+  @if (pelicula) {
+    <a class="volver" routerLink="/">⬅️ Volver a la cartelera</a>
+
+    <div class="detalle">
+      <img [src]="pelicula.poster" [alt]="pelicula.titulo" class="poster" />
+
+      <div class="info">
+        <h1 class="titulo">{{ pelicula.titulo }}</h1>
+
+        <div class="tags">
+          <span class="tag">{{ pelicula.genero }}</span>
+          <span class="tag">{{ pelicula.duracion }} min</span>
+        </div>
+
+        <div class="calificacion">
+          ⭐ {{ pelicula.calificacion }}/10
+        </div>
+
+        <p class="sinopsis">{{ pelicula.sinopsis }}</p>
+
+        <div class="meta">
+          <p>Estreno: {{ pelicula.fechaLanzamiento | date:'longDate' }}</p>
+        </div>
+
+        <div class="compra">
+          <span class="precio">{{ pelicula.precio | currency:'GTQ':'symbol':'1.0-0' }}</span>
+          <button class="btn-comprar">Comprar entrada</button>
+        </div>
+      </div>
+    </div>
+  } @else {
+    <p class="no-encontrada">Película no encontrada.</p>
+  }
+</div>

@@ -1,0 +1,124 @@
+.page {
+  min-height: 100vh;
+  background-color: #0f0f0f;
+  padding: 2rem;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+.volver {
+  display: inline-block;
+  color: #888;
+  text-decoration: none;
+  margin-bottom: 2rem;
+  font-size: 0.9rem;
+  transition: color 0.2s;
+}
+
+.volver:hover {
+  color: #fff;
+}
+
+.detalle {
+  display: flex;
+  gap: 2.5rem;
+  max-width: 900px;
+}
+
+.poster {
+  width: 280px;
+  border-radius: 12px;
+  flex-shrink: 0;
+  object-fit: cover;
+}
+
+.info {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  color: #fff;
+}
+
+.titulo {
+  font-size: 2rem;
+  font-weight: 700;
+  margin: 0;
+}
+
+.tags {
+  display: flex;
+  gap: 0.5rem;
+  flex-wrap: wrap;
+}
+
+.tag {
+  background-color: #2a2a2a;
+  color: #aaa;
+  font-size: 0.8rem;
+  padding: 4px 10px;
+  border-radius: 20px;
+}
+
+.calificacion {
+  color: #f5c518;
+  font-size: 1.1rem;
+  font-weight: 600;
+}
+
+.sinopsis {
+  color: #ccc;
+  line-height: 1.7;
+  margin: 0;
+  max-width: 500px;
+}
+
+.meta {
+  color: #666;
+  font-size: 0.85rem;
+}
+
+.meta p {
+  margin: 0;
+}
+
+.compra {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+  margin-top: 0.5rem;
+}
+
+.precio {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #f5c518;
+}
+
+.btn-comprar {
+  background-color: #f5c518;
+  color: #000;
+  border: none;
+  padding: 0.65rem 1.5rem;
+  border-radius: 8px;
+  font-size: 0.95rem;
+  font-weight: 700;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+.btn-comprar:hover {
+  background-color: #e6b800;
+}
+
+.no-encontrada {
+  color: #888;
+}
+
+@media (max-width: 600px) {
+  .detalle {
+    flex-direction: column;
+  }
+
+  .poster {
+    width: 100%;
+  }
+}
