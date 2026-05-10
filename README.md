@@ -1,49 +1,48 @@
-# 🌐 Web Development Repository
+# Web Development Repository
 
-This repository contains my work and learning process for the Web Development course, covering the core pillars of modern web applications: Back-end, Front-end, and the integration between both layers.
+This repository contains my work throughout the Web Development course, organized into classes, academic tasks, exams, and projects.
 
-The initial focus of this repository is Back-end development using C#, where I explore server-side logic, application architecture, data handling, and best practices for building scalable and maintainable systems.
+The course covers full-stack web development: Back-end with C# / ASP.NET Core, Front-end with Angular, API design, and database integration with SQL Server.
 
-As the course progresses, this repository will evolve to include Front-end development and the complete communication flow between client and server, providing a full-stack perspective on web application development.
+## Topics Covered
 
-## 📌 Topics Covered
+- Back-end development with C# (.NET Core 3.1 and .NET 8)
+- RESTful API design with ASP.NET Core Web API
+- Layered architecture: Controllers, Services, Interfaces, Models, DTOs
+- Data access with Dapper and SQL Server
+- API documentation with Swagger
+- Front-end development with Angular 21 and TypeScript
+- Angular template syntax, components, objects, and arrays
 
-- Back-end development with C#
-- Server-side logic and architecture
-- API design and data management
-- Front-end fundamentals (coming soon)
-- Client–server integration
+---
 
-## 🚀 Purpose
+## Repository Structure
 
-The goal of this repository is to document my growth as a developer, apply theoretical concepts through practice, and build a strong foundation in full-stack web development.
+### Classes
 
-==================================================
-## 📚 Projects in class
+Work developed during class sessions, organized by technology layer.
 
-This section contains individual projects made during the classes of this course
+| Folder | Stack | Description |
+|--------|-------|-------------|
+| [classes/backend/Pre_Examen](./classes/backend/Pre_Examen/) | C# · .NET Core 3.1 | Inventory management API (Productos) |
+| [classes/front/clase2_Front](./classes/front/clase2_Front/) | Angular 21 · TypeScript | Frontend basics: variables, functions, objects, arrays |
+| [classes/front/clase_4_front](./classes/front/clase_4_front/) | Angular 21 · TypeScript | Components, services, routing, and Angular pipes |
 
-- [SuperHeroes - AKA: Clase2](./classes/SuperHeroeProject/Clase2/)
-- [Pre-Exam](./classes/Pre_Examen/)
+### Academic Tasks
 
-==================================================
+| Task | Description |
+|------|-------------|
+| [Task 01 – Git Essay](./tasks/task-01-git-essay/ensayo-git.md) | Essay on Git, version control, and essential workflows |
 
-## 📄 Academic Tasks
+### Exams
 
-This section contains individual academic assignments and written documentation for the course.
+| Exam | Stack | Description |
+|------|-------|-------------|
+| [Partial Exam](./exams/Examen_Parcial_DesarrolloWeb1/) | C# · .NET Core 3.1 | Reservations management API |
+| [Final Exam](./exams/Examen_Final_DesarrolloWeb1/) | C# · .NET 8 | Events and inscriptions management API |
 
-- [Task 01 – Git Essay](./tasks/task-01-git-essay/ensayo-git.md)
+### Projects
 
-==================================================
-
-## 🐧 Exams
-
-This section contains individual exams like partial and final exams for this course.
-
-- [Partial Exam](./exams/Examen_Parcial_DesarrolloWeb1/)
-
-## 🧩 Projects
-
-This section contains larger practical projects developed throughout the course.
-
-(Coming soon)
+| Project | Stack | Description |
+|---------|-------|-------------|
+| [Sales System with Stock Control](./projects/ProyectoSistemaDeVentasConControlDeStock/) | C# · .NET 8 | Full sales and inventory management API |

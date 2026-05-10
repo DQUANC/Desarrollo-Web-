@@ -1,12 +1,19 @@
 # Task XX – Task Title
 
-Description:
-Brief description of the assignment and its objectives.
+Brief description of the assignment, its objectives, and the concepts it covers.
 
-Topics:
+---
+
+## Topics
+
 - Topic 1
 - Topic 2
 - Topic 3
 
-Files:
-- Description of important files in this task folder.
+---
+
+## Files
+
+| File | Description |
+|------|-------------|
+| `file.md` | Description of the file and its purpose |

@@ -1,49 +1,63 @@
 # Web Development Exams
 
-This folder contains practical exams related to Web Development.  
-Each exam focuses on applying core frontend and/or backend concepts in a structured and time-constrained scenario.
+This folder contains practical exams for the Web Development course. Each exam evaluates the ability to design and implement a REST API under time-constrained conditions.
 
 ---
 
-## 📂 Structure
+## Partial Exam — Reservations API
 
-Each exam may include:
+**Path:** `Examen_Parcial_DesarrolloWeb1/`
+**Stack:** C# · .NET Core 3.1 · ASP.NET Core Web API · Dapper · SQL Server · Swagger
 
-- HTML files
-- CSS stylesheets
-- JavaScript or TypeScript logic
-- Backend implementations (if required)
-- Database scripts (if applicable)
-- Supporting assets (images, icons, etc.)
+REST API for managing reservations, built with layered architecture.
 
----
+**Architecture:**
+- `Controllers/` — `ControladorReserva`
+- `Services/` — `ServicioReserva`
+- `Interfaces/` — `IReserva`
+- `Models/` — `ModeloReserva`
+- `DTOs/` — `CrearReservaDTO`, `ActualizarReservaDTO`
 
-## 🎯 Objectives
+**Endpoints:**
 
-The purpose of these exams is to evaluate:
-
-- Understanding of web fundamentals (HTML, CSS, JavaScript)
-- Ability to structure clean and maintainable code
-- Problem-solving under constraints
-- UI/UX implementation basics
-- Backend integration (when required)
-- Database interaction (if applicable)
+| Method | Route | Description |
+|--------|-------|-------------|
+| GET | `/api/ControladorReserva/Obtener Todos` | List all reservations |
+| POST | `/api/ControladorReserva/Crear Reserva` | Create a reservation |
+| PUT | `/api/ControladorReserva/Actualizar Reserva` | Update a reservation |
 
 ---
 
-## 🧠 Topics Covered
+## Final Exam — Events & Inscriptions API
 
-Depending on the exam, topics may include:
+**Path:** `Examen_Final_DesarrolloWeb1/`
+**Stack:** C# · .NET 8 · ASP.NET Core Web API · SQL Server · Swagger
 
-- Semantic HTML structure
-- Responsive design
-- Flexbox & Grid
-- DOM manipulation
-- Form validation
-- API consumption
-- Authentication basics
-- CRUD operations
-- RESTful principles
-- SQL / NoSQL integration
+REST API for an event management platform with inscriptions, movement history, and alerts.
+
+**Architecture:**
+- `Controllers/` — `EventoController`, `PersonaController`, `InscripcionController`
+- `Services/` — `EventoService`, `PersonaService`, `InscripcionService`
+- `Interfaces/` — `IEventoService`, `IPersonaService`, `IInscripcionService`
+- `Models/` — `eventosModel`, `PersonaModel`, `InscripcionesModel`, `Historial_MovimientosModel`, `AlertasModel`
+- `DTOs/` — `InscripcionDTO`
+
+**Modules:**
+
+| Module | Description |
+|--------|-------------|
+| Personas | People registered in the system |
+| Eventos | Events that can be created and listed |
+| Inscripciones | Registrations linking people to events |
+| Historial de Movimientos | Audit trail of system changes |
+| Alertas | Automated alerts for system events |
 
 ---
+
+## Skills Evaluated
+
+- Layered architecture (Controllers, Services, Interfaces, Models, DTOs)
+- RESTful API design and correct HTTP verb usage
+- Dependency injection in ASP.NET Core
+- Data access with Dapper and SQL Server
+- Problem-solving under time constraints

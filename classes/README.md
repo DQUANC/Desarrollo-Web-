@@ -1,42 +1,57 @@
-# 🦸‍♂️ SuperHeroes API – Backend en C# (.NET Core 3.1)
+# Classes
 
-Backend de una aplicación web sobre **superhéroes**, desarrollado en **C# con .NET Core 3.1** como parte del curso de **Desarrollo Web**.  
-El proyecto implementa una **API REST** documentada con **Swagger**, permitiendo la exploración y prueba de los endpoints de forma visual.
-
----
-
-## 🎯 Objetivo del Proyecto
-
-Desarrollar el backend de una aplicación web que permita:
-
-- Administrar información de superhéroes
-- Comprender el funcionamiento de una API REST
-- Aplicar buenas prácticas en desarrollo backend
-- Documentar y probar endpoints usando Swagger
-- Preparar el backend para una futura integración con un frontend
-
-El enfoque del proyecto es **académico y formativo**.
+This folder contains work developed during class sessions for the Web Development course, organized by technology layer: **backend** and **frontend**.
 
 ---
 
-## 🛠️ Tecnologías Utilizadas
+## Backend – Inventory Management API
 
-- **C#**
-- **.NET Core 3.1**
-- **ASP.NET Core Web API**
-- **Swagger / Swashbuckle**
-- **SQL Server** 
-- **Visual Studio**
+**Path:** `backend/Pre_Examen/`
+**Stack:** C# · .NET Core 3.1 · ASP.NET Core Web API · Dapper · SQL Server · Swagger
+
+Practice project covering layered architecture and REST API design for managing inventory items (`Producto`).
+
+**Architecture:**
+- `Controllers/` — `InventarioController` with HTTP endpoints
+- `Services/` — `ServicioInventario` with business logic
+- `Interfaces/` — `IServicioInventario`
+- `Models/` — `Producto`
+- `DTOs/` — `ProductoPorIdDto`, `ProductoCrearPorDto`
+
+**Endpoints:**
+
+| Method | Route | Description |
+|--------|-------|-------------|
+| GET | `/api/Inventario` | List all products |
+| GET | `/api/Inventario/{id}` | Get a product by ID |
+| POST | `/api/Inventario` | Create a product |
+| PUT | `/api/Inventario` | Update a product |
+| DELETE | `/api/Inventario/{id}` | Delete a product |
 
 ---
 
-## ⚙️ Funcionalidades del Sistema
+## Frontend – Angular Class Project
 
-La API permite la gestión completa de superhéroes a través de los siguientes endpoints:
+**Path:** `front/clase2_Front/`
+**Stack:** Angular 21 · TypeScript · Angular SSR (Express) · Vitest
 
-### 🦸‍♀️ Gestión de Superhéroes
-- 📄 Listar todos los superhéroes registrados
-- 🔍 Obtener la información de un superhéroe específico por ID
-- ➕ Registrar un nuevo superhéroe
-- ✏️ Actualizar los datos de un superhéroe existente
-- 🗑️ Eliminar un superhéroe del sistema
+Practice project covering Angular fundamentals through a demo page that renders data from the component class.
+
+**Concepts covered:**
+
+| Section | What it demonstrates |
+|---------|---------------------|
+| Variables | Template interpolation of `nombre`, `apellido`, `titulo` |
+| Operations | Inline arithmetic in templates |
+| Functions | `DuplicarNumero`, `SumarNumeros`, `ConcatenarNombres` |
+| Object | Single `pelicula` object with title, date, and price |
+| Array – Movies | `arregloPelicula` rendered with `@for` loop |
+| Array – Games | `arregloVideojuego` with images, dates, and prices |
+
+**Scripts:**
+
+```bash
+npm start          # Dev server (ng serve)
+npm run build      # Production build
+npm test           # Run tests with Vitest
+```

@@ -1,17 +1,39 @@
 # Project XX – Project Name
 
-Description:
-Brief overview of the project and its goals.
+Brief overview of the project, its purpose, and what problem it solves.
 
-Technologies:
+---
+
+## Technologies
+
 - C#
-- .NET
-- (Other technologies)
+- .NET 8
+- ASP.NET Core Web API
+- Dapper / Entity Framework
+- SQL Server
+- Swagger
 
-Features:
+---
+
+## Architecture
+
+- `Controllers/` — HTTP endpoints
+- `Services/` — Business logic
+- `Interfaces/` — Service contracts
+- `Models/` — Domain models
+- `DTOs/` — Data transfer objects
+
+---
+
+## Features
+
 - Feature 1
 - Feature 2
 - Feature 3
 
-Status:
-- In progress / Completed / Planned
+---
+
+## Status
+
+- [ ] In progress
+- [ ] Completed

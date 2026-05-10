@@ -1,13 +1,21 @@
 # Task 01 – Git Essay
 
-Description:
-Academic essay covering Git, version control concepts, and essential commands.
+Academic essay on Git, version control fundamentals, and essential workflows for software development.
 
-Topics:
-- Version control
-- Git fundamentals
-- Branching and workflows
+---
+
+## Topics
+
+- What is version control and why it matters
+- Git fundamentals: repository, commit, branch, merge
+- Common Git workflows and branching strategies
+- Key commands and their usage
 - Advanced Git options
 
-Files:
-- ensayo-git.md — Main academic essay document.
+---
+
+## Files
+
+| File | Description |
+|------|-------------|
+| [ensayo-git.md](./ensayo-git.md) | Main academic essay document |

@@ -1,1 +1,15 @@
-".vs/" 
+# Visual Studio
+.vs/
+
+# Node
+node_modules/
+npm-debug.log
+yarn-error.log
+
+# .NET build output
+bin/
+obj/
+
+# System
+.DS_Store
+Thumbs.db
