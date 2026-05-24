@@ -1,0 +1,101 @@
+<app-navbar />
+
+<div class="page-wrapper">
+
+  <!-- ===== PAGE HERO ===== -->
+  <section class="page-hero">
+    <div class="page-hero-content">
+      <span class="hero-badge">🔥 Ofertas por tiempo limitado</span>
+      <h1 class="page-title">Descuentos Especiales</h1>
+      <p class="page-subtitle">
+        {{ offers.length }} productos seleccionados con descuentos de hasta el 40%. ¡No dejes pasar
+        estas oportunidades únicas!
+      </p>
+      <div class="hero-stats">
+        <div class="hero-stat">
+          <strong>{{ offers.length }}</strong>
+          <span>Ofertas activas</span>
+        </div>
+        <div class="hero-stat-divider"></div>
+        <div class="hero-stat">
+          <strong>Hasta 40%</strong>
+          <span>De descuento</span>
+        </div>
+        <div class="hero-stat-divider"></div>
+        <div class="hero-stat">
+          <strong>Envío gratis</strong>
+          <span>En compras +$100</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== OFFERS GRID ===== -->
+  <main class="offers-section">
+    <div class="offers-inner">
+
+      <div class="offers-grid">
+        @for (product of offers; track product.id) {
+          <article class="offer-card">
+
+            <!-- Discount ribbon -->
+            <div class="discount-ribbon">-{{ product.discount }}%</div>
+
+            <!-- Image area -->
+            <div class="product-image"
+              [style.background]="brokenImages.has(product.id) ? product.gradient : '#f8fafc'">
+              @if (!brokenImages.has(product.id)) {
+                <img [src]="product.imageUrl" [alt]="product.name" loading="lazy"
+                  (error)="onImgError(product.id)" />
+              } @else {
+                <span class="product-emoji">{{ product.emoji }}</span>
+              }
+            </div>
+
+            <!-- Info -->
+            <div class="product-body">
+              <span class="product-category">{{ product.category }}</span>
+              <h2 class="product-name">{{ product.name }}</h2>
+              <p class="product-description">{{ product.description }}</p>
+
+              <!-- Pricing -->
+              <div class="pricing-block">
+                <div class="price-row">
+                  <span class="price-original">{{ formatQ(product.price) }}</span>
+                  <span class="price-final">{{ discountedPrice(product) }}</span>
+                </div>
+                <div class="savings-tag">
+                  Ahorras {{ savings(product) }}
+                </div>
+              </div>
+
+              <!-- Actions -->
+              <div class="product-actions">
+                <button class="btn-details">Ver Detalles</button>
+                <button
+                  class="btn-cart"
+                  [class.added]="addedToCart.has(product.id)"
+                  (click)="addToCart(product.id)"
+                >
+                  {{ addedToCart.has(product.id) ? '✓ Agregado' : '🛒 Agregar al Carrito' }}
+                </button>
+              </div>
+            </div>
+
+          </article>
+        }
+      </div>
+
+    </div>
+  </main>
+
+  <!-- ===== BOTTOM CTA ===== -->
+  <section class="bottom-cta">
+    <div class="bottom-cta-inner">
+      <h2>¿Buscas más productos?</h2>
+      <p>Explora nuestro catálogo completo con más de 500,000 productos disponibles.</p>
+      <a class="btn-catalog" routerLink="/productos">Ver Catálogo Completo</a>
+    </div>
+  </section>
+
+</div>

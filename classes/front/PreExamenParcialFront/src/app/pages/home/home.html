@@ -1,0 +1,316 @@
+<app-navbar [transparent]="true" [showHomeLinks]="true" />
+
+<!-- ===== HERO SECTION ===== -->
+<section id="inicio" class="hero">
+  <div class="hero-bg-shapes">
+    <div class="shape shape-1"></div>
+    <div class="shape shape-2"></div>
+    <div class="shape shape-3"></div>
+  </div>
+
+  <div class="hero-content">
+    <div class="hero-text">
+      <span class="hero-badge">🚀 Plataforma Líder en E-Commerce</span>
+      <h1 class="hero-title">
+        Impulsa tu negocio<br />
+        <span class="gradient-text">al siguiente nivel</span>
+      </h1>
+      <p class="hero-subtitle">
+        Soluciones integrales de comercio digital para empresas que buscan crecer, escalar y
+        conquistar nuevos mercados con tecnología de vanguardia.
+      </p>
+      <div class="hero-actions">
+        <button class="btn-primary" (click)="scrollTo('servicios')">Ver Servicios</button>
+        <button class="btn-secondary" (click)="scrollTo('contacto')">Contáctanos</button>
+      </div>
+    </div>
+
+    <div class="hero-visual">
+      <div class="mock-dashboard">
+        <div class="dash-header">
+          <div class="dash-dot red"></div>
+          <div class="dash-dot yellow"></div>
+          <div class="dash-dot green"></div>
+          <span>Dashboard NexoCommerce</span>
+        </div>
+        <div class="dash-body">
+          <div class="dash-stat-row">
+            <div class="dash-stat">
+              <div class="stat-label-sm">Ventas Hoy</div>
+              <div class="stat-value-lg green">+Q96,710</div>
+            </div>
+            <div class="dash-stat">
+              <div class="stat-label-sm">Pedidos</div>
+              <div class="stat-value-lg blue">247</div>
+            </div>
+          </div>
+          <div class="dash-chart">
+            <div class="chart-bar" style="height: 40%"></div>
+            <div class="chart-bar" style="height: 65%"></div>
+            <div class="chart-bar" style="height: 50%"></div>
+            <div class="chart-bar" style="height: 80%"></div>
+            <div class="chart-bar" style="height: 68%"></div>
+            <div class="chart-bar active" style="height: 95%"></div>
+            <div class="chart-bar" style="height: 82%"></div>
+          </div>
+          <div class="dash-products">
+            <div class="product-row">
+              <div class="product-thumb"></div>
+              <div class="product-info">
+                <div class="p-name"></div>
+                <div class="p-price green-text">Q779</div>
+              </div>
+              <div class="stock-badge">En Stock</div>
+            </div>
+            <div class="product-row">
+              <div class="product-thumb purple-thumb"></div>
+              <div class="product-info">
+                <div class="p-name short"></div>
+                <div class="p-price blue-text">Q1,169</div>
+              </div>
+              <div class="stock-badge">En Stock</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="hero-stats">
+    @for (stat of stats; track stat.label) {
+      <div class="stat-item">
+        <div class="stat-number">{{ stat.number }}</div>
+        <div class="stat-label">{{ stat.label }}</div>
+      </div>
+    }
+  </div>
+</section>
+
+<!-- ===== SERVICES SECTION ===== -->
+<section id="servicios" class="services">
+  <div class="container">
+    <div class="section-header">
+      <span class="section-tag">Lo que ofrecemos</span>
+      <h2 class="section-title">Nuestros Servicios</h2>
+      <p class="section-subtitle">
+        Soluciones diseñadas para cubrir cada aspecto de tu operación comercial digital, desde la
+        tienda hasta la entrega final.
+      </p>
+    </div>
+
+    <div class="services-grid">
+      @for (service of services; track service.title) {
+        <div class="service-card">
+          <div class="service-icon">{{ service.emoji }}</div>
+          <h3 class="service-title">{{ service.title }}</h3>
+          <p class="service-description">{{ service.description }}</p>
+        </div>
+      }
+    </div>
+  </div>
+</section>
+
+<!-- ===== ABOUT / MVV SECTION ===== -->
+<section id="nosotros" class="about">
+  <div class="container">
+    <div class="section-header">
+      <span class="section-tag">Sobre Nosotros</span>
+      <h2 class="section-title">Quiénes Somos</h2>
+      <p class="section-subtitle">
+        Somos una empresa de tecnología comprometida con impulsar el comercio digital de las
+        empresas en toda la región centroamericana.
+      </p>
+    </div>
+
+    <div class="mvv-grid">
+      <div class="mvv-card">
+        <div class="mvv-icon">🎯</div>
+        <h3 class="mvv-title">Misión</h3>
+        <p class="mvv-text">
+          Empoderar a las empresas con herramientas digitales accesibles y robustas que les
+          permitan competir en el mercado global, creciendo de manera sostenible y eficiente a
+          través de la tecnología.
+        </p>
+      </div>
+
+      <div class="mvv-card">
+        <div class="mvv-icon">🔭</div>
+        <h3 class="mvv-title">Visión</h3>
+        <p class="mvv-text">
+          Ser la plataforma de comercio digital líder en Centroamérica para 2030, reconocida por
+          su innovación tecnológica, confiabilidad y el impacto positivo que generamos en el
+          ecosistema empresarial regional.
+        </p>
+      </div>
+
+      <div class="mvv-card">
+        <div class="mvv-icon">⭐</div>
+        <h3 class="mvv-title">Valores</h3>
+        <div class="values-list">
+          @for (value of values; track value.name) {
+            <div class="value-item">
+              <span class="value-emoji">{{ value.emoji }}</span>
+              <div class="value-content">
+                <strong>{{ value.name }}</strong>
+                <p>{{ value.description }}</p>
+              </div>
+            </div>
+          }
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== HIGHLIGHT / CTA SECTION ===== -->
+<section class="highlight-section">
+  <div class="highlight-content">
+    <div class="highlight-text">
+      <h2>¿Listo para transformar tu negocio?</h2>
+      <p>
+        Únete a más de 10,000 empresas que ya confían en NexoCommerce para llevar su comercio al
+        mundo digital con resultados reales.
+      </p>
+      <button class="btn-primary large" (click)="scrollTo('contacto')">
+        Solicitar Demo Gratuita
+      </button>
+    </div>
+
+    <div class="highlight-visual">
+      <div class="mockup-phone">
+        <div class="phone-notch"></div>
+        <div class="phone-screen">
+          <div class="phone-app">
+            <div class="app-header-bar"></div>
+            <div class="app-banner"></div>
+            <div class="app-products">
+              <div class="app-product"></div>
+              <div class="app-product purple"></div>
+            </div>
+            <div class="app-cart-btn"></div>
+          </div>
+        </div>
+      </div>
+      <div class="floating-card card-1">✅ Pedido confirmado</div>
+      <div class="floating-card card-2">⭐ 4.9 / 5 Calificación</div>
+      <div class="floating-card card-3">🚀 +200% en ventas</div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== CONTACT SECTION ===== -->
+<section id="contacto" class="contact">
+  <div class="container">
+    <div class="section-header">
+      <span class="section-tag">¿Hablamos?</span>
+      <h2 class="section-title">Contáctanos</h2>
+      <p class="section-subtitle">
+        Estamos listos para ayudarte a dar el siguiente paso. Contáctanos y un especialista te
+        atenderá a la brevedad.
+      </p>
+    </div>
+
+    <div class="contact-grid">
+      <div class="contact-card">
+        <div class="contact-icon">📍</div>
+        <h3>Dirección</h3>
+        <p>Av. Reforma 15-54, Zona 10<br />Ciudad de Guatemala, Guatemala</p>
+      </div>
+      <div class="contact-card">
+        <div class="contact-icon">📧</div>
+        <h3>Correo Electrónico</h3>
+        <p>info&#64;nexocommerce.gt<br />soporte&#64;nexocommerce.gt</p>
+      </div>
+      <div class="contact-card">
+        <div class="contact-icon">📞</div>
+        <h3>Teléfono</h3>
+        <p>+502 2234 5678<br />+502 5678 9012</p>
+      </div>
+      <div class="contact-card">
+        <div class="contact-icon">⏰</div>
+        <h3>Horario de Atención</h3>
+        <p>Lunes – Viernes: 8:00 – 18:00<br />Sábados: 9:00 – 13:00</p>
+      </div>
+    </div>
+
+    <div class="social-section">
+      <h3>Síguenos en Redes Sociales</h3>
+      <div class="social-links">
+        <a class="social-link" href="#" aria-label="Facebook">
+          <span class="social-icon">f</span>Facebook
+        </a>
+        <a class="social-link" href="#" aria-label="LinkedIn">
+          <span class="social-icon">in</span>LinkedIn
+        </a>
+        <a class="social-link" href="#" aria-label="Instagram">
+          <span class="social-icon">ig</span>Instagram
+        </a>
+        <a class="social-link" href="#" aria-label="Twitter/X">
+          <span class="social-icon">𝕏</span>Twitter/X
+        </a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== FOOTER ===== -->
+<footer class="footer">
+  <div class="footer-container">
+    <div class="footer-brand">
+      <div class="footer-logo">
+        <svg viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg" width="34" height="34">
+          <rect width="40" height="40" rx="10" fill="url(#footerGradient)" />
+          <path d="M10 15h3l4 11h6l4-11h3" stroke="white" stroke-width="2.2"
+            stroke-linecap="round" stroke-linejoin="round" />
+          <circle cx="18.5" cy="29" r="2" fill="white" />
+          <circle cx="25.5" cy="29" r="2" fill="white" />
+          <defs>
+            <linearGradient id="footerGradient" x1="0" y1="0" x2="40" y2="40">
+              <stop offset="0%" stop-color="#3b82f6" />
+              <stop offset="100%" stop-color="#8b5cf6" />
+            </linearGradient>
+          </defs>
+        </svg>
+        <span>NexoCommerce</span>
+      </div>
+      <p class="footer-tagline">
+        Tu plataforma de comercio digital de confianza. Impulsando negocios hacia el futuro.
+      </p>
+    </div>
+
+    <div class="footer-links">
+      <div class="footer-col">
+        <h4>Plataforma</h4>
+        <ul>
+          <li><a (click)="scrollTo('servicios')">Tienda en Línea</a></li>
+          <li><a (click)="scrollTo('servicios')">Gestión de Inventario</a></li>
+          <li><a (click)="scrollTo('servicios')">Pagos Seguros</a></li>
+          <li><a (click)="scrollTo('servicios')">Analítica Avanzada</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Empresa</h4>
+        <ul>
+          <li><a (click)="scrollTo('nosotros')">Quiénes Somos</a></li>
+          <li><a (click)="scrollTo('nosotros')">Misión y Visión</a></li>
+          <li><a (click)="scrollTo('nosotros')">Valores</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Contacto</h4>
+        <ul>
+          <li><a (click)="scrollTo('contacto')">Información</a></li>
+          <li><a (click)="scrollTo('contacto')">Solicitar Demo</a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <div class="footer-bottom">
+    <p>© 2026 NexoCommerce. Todos los derechos reservados.</p>
+    <div class="footer-legal">
+      <a href="#">Términos de Servicio</a>
+      <a href="#">Política de Privacidad</a>
+    </div>
+  </div>
+</footer>

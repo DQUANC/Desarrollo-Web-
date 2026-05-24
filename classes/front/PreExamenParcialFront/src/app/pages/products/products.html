@@ -1,0 +1,123 @@
+<app-navbar />
+
+<div class="page-wrapper">
+
+  <!-- ===== PAGE HERO ===== -->
+  <section class="page-hero">
+    <div class="page-hero-content">
+      <span class="page-tag">Catálogo Completo</span>
+      <h1 class="page-title">Nuestros Productos</h1>
+      <p class="page-subtitle">
+        Explora nuestra selección de {{ products.length }} productos de alta calidad en múltiples
+        categorías, con los mejores precios del mercado.
+      </p>
+    </div>
+  </section>
+
+  <!-- ===== FILTERS BAR ===== -->
+  <div class="filters-bar">
+    <div class="filters-inner">
+
+      <!-- Search -->
+      <div class="search-box">
+        <span class="search-icon">🔍</span>
+        <input
+          type="text"
+          placeholder="Buscar productos..."
+          [value]="searchTerm"
+          (input)="onSearch($event)"
+        />
+      </div>
+
+      <!-- Categories -->
+      <div class="category-pills">
+        @for (cat of categories; track cat) {
+          <button
+            class="pill"
+            [class.active]="selectedCategory === cat"
+            (click)="selectCategory(cat)"
+          >
+            {{ cat }}
+          </button>
+        }
+      </div>
+
+    </div>
+  </div>
+
+  <!-- ===== PRODUCT GRID ===== -->
+  <main class="catalog">
+    <div class="catalog-inner">
+
+      @if (filtered.length === 0) {
+        <div class="empty-state">
+          <span class="empty-icon">🔎</span>
+          <p>No se encontraron productos para "{{ searchTerm }}".</p>
+          <button class="btn-reset" (click)="searchTerm = ''; selectedCategory = 'Todos'">
+            Limpiar filtros
+          </button>
+        </div>
+      }
+
+      @if (filtered.length > 0) {
+        <p class="results-count">{{ filtered.length }} producto{{ filtered.length !== 1 ? 's' : '' }} encontrado{{ filtered.length !== 1 ? 's' : '' }}</p>
+
+        <div class="product-grid">
+          @for (product of filtered; track product.id) {
+            <article class="product-card">
+
+              <!-- Image area -->
+              <div class="product-image"
+                [style.background]="brokenImages.has(product.id) ? product.gradient : '#f8fafc'">
+                @if (!brokenImages.has(product.id)) {
+                  <img [src]="product.imageUrl" [alt]="product.name" loading="lazy"
+                    (error)="onImgError(product.id)" />
+                } @else {
+                  <span class="product-emoji">{{ product.emoji }}</span>
+                }
+                @if (product.isNew) {
+                  <span class="badge badge-new">Nuevo</span>
+                }
+                @if (product.discount) {
+                  <span class="badge badge-discount">-{{ product.discount }}%</span>
+                }
+              </div>
+
+              <!-- Info -->
+              <div class="product-body">
+                <span class="product-category">{{ product.category }}</span>
+                <h2 class="product-name">{{ product.name }}</h2>
+                <p class="product-description">{{ product.description }}</p>
+
+                <div class="product-footer">
+                  <div class="product-price">
+                    @if (product.discount) {
+                      <span class="price-original">{{ formatQ(product.price) }}</span>
+                      <span class="price-final">{{ discountedPrice(product) }}</span>
+                    } @else {
+                      <span class="price-final">{{ formatQ(product.price) }}</span>
+                    }
+                  </div>
+
+                  <div class="product-actions">
+                    <button class="btn-details">Ver Detalles</button>
+                    <button
+                      class="btn-cart"
+                      [class.added]="addedToCart.has(product.id)"
+                      (click)="addToCart(product.id)"
+                    >
+                      {{ addedToCart.has(product.id) ? '✓ Agregado' : '🛒 Agregar' }}
+                    </button>
+                  </div>
+                </div>
+              </div>
+
+            </article>
+          }
+        </div>
+      }
+
+    </div>
+  </main>
+
+</div>

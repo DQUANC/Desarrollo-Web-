@@ -1,0 +1,46 @@
+<nav class="navbar" [class.scrolled]="isScrolled" [class.opaque]="!transparent">
+  <div class="nav-container">
+
+    <a class="nav-brand" routerLink="/" (click)="closeMenu()">
+      <svg viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg" width="36" height="36">
+        <rect width="40" height="40" rx="10" fill="url(#navLogoGrad)" />
+        <path d="M10 15h3l4 11h6l4-11h3" stroke="white" stroke-width="2.2"
+          stroke-linecap="round" stroke-linejoin="round" />
+        <circle cx="18.5" cy="29" r="2" fill="white" />
+        <circle cx="25.5" cy="29" r="2" fill="white" />
+        <defs>
+          <linearGradient id="navLogoGrad" x1="0" y1="0" x2="40" y2="40">
+            <stop offset="0%" stop-color="#1e40af" />
+            <stop offset="100%" stop-color="#7c3aed" />
+          </linearGradient>
+        </defs>
+      </svg>
+      <span class="brand-name">NexoCommerce</span>
+    </a>
+
+    <button class="hamburger" (click)="toggleMenu()" [class.active]="isMenuOpen" aria-label="Menú">
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>
+
+    <div class="nav-links" [class.open]="isMenuOpen">
+      <a routerLink="/" routerLinkActive="active" [routerLinkActiveOptions]="{ exact: true }"
+        (click)="closeMenu()">Inicio</a>
+
+      @if (showHomeLinks) {
+        <a routerLink="/" fragment="servicios" (click)="closeMenu()">Servicios</a>
+        <a routerLink="/" fragment="nosotros" (click)="closeMenu()">Nosotros</a>
+      }
+
+      <a routerLink="/productos" routerLinkActive="active" (click)="closeMenu()">Productos</a>
+      <a routerLink="/ofertas" routerLinkActive="active" (click)="closeMenu()">Ofertas</a>
+      <a routerLink="/" fragment="contacto" (click)="closeMenu()">Contacto</a>
+
+      <button class="btn-nav-cta" routerLink="/" [fragment]="'contacto'" (click)="closeMenu()">
+        Comenzar Ahora
+      </button>
+    </div>
+
+  </div>
+</nav>
