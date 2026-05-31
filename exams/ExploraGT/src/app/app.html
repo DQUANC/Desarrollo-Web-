@@ -1,0 +1,59 @@
+<!-- Hero -->
+<header class="hero">
+  <div class="hero__inner">
+    <div class="hero__brand">
+      <span class="hero__mark">GT</span>
+      <span class="hero__name">ExploraGT</span>
+    </div>
+    <h1 class="hero__title">Descubre Guatemala</h1>
+    <p class="hero__sub">
+      Explora los destinos más impresionantes de un país lleno de historia,
+      naturaleza y cultura viva.
+    </p>
+  </div>
+  <div class="hero__wave" aria-hidden="true">
+    <svg viewBox="0 0 1440 72" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg">
+      <path d="M0,36 C360,72 1080,0 1440,36 L1440,72 L0,72 Z" fill="#f5f5f0"/>
+    </svg>
+  </div>
+</header>
+
+<!-- Filter bar -->
+<section class="filters">
+  <div class="container">
+    <div class="filters__bar" role="group" aria-label="Filtrar por categoría">
+      @for (cat of categorias; track cat) {
+        <button
+          class="filter-btn"
+          [class.filter-btn--active]="categoriaActiva === cat"
+          (click)="setCategoria(cat)"
+        >{{ cat }}</button>
+      }
+    </div>
+  </div>
+</section>
+
+<!-- Gallery -->
+<main class="gallery">
+  <div class="container">
+    <p class="gallery__count">
+      {{ destinosFiltrados.length }}
+      {{ destinosFiltrados.length === 1 ? 'destino encontrado' : 'destinos encontrados' }}
+    </p>
+
+    <div class="gallery__grid">
+      @for (destino of destinosFiltrados; track destino.id) {
+        <app-destino-card [destino]="destino" />
+      }
+    </div>
+
+    @if (destinosFiltrados.length === 0) {
+      <p class="gallery__empty">No hay destinos en esta categoría.</p>
+    }
+  </div>
+</main>
+
+<!-- Footer -->
+<footer class="footer">
+  <p>&copy; 2025 ExploraGT &mdash; Hecho con amor por Guatemala</p>
+</footer>

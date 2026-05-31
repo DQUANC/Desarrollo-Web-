@@ -1,0 +1,34 @@
+<article class="card" [class.card--destacado]="destino.destacado">
+  <div class="card__image-wrap">
+    <img
+      [src]="destino.imagenUrl"
+      [alt]="'Fotografía de ' + destino.nombre"
+      class="card__image"
+      loading="lazy"
+    />
+    <span class="badge badge--categoria" [attr.data-cat]="destino.categoria">
+      {{ destino.categoria }}
+    </span>
+    @if (destino.destacado) {
+      <span class="badge badge--destacado">★ Destacado</span>
+    }
+  </div>
+
+  <div class="card__body">
+    <h3 class="card__title">{{ destino.nombre }}</h3>
+    <p class="card__location">
+      <svg class="pin" viewBox="0 0 24 24" aria-hidden="true">
+        <path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5S10.62 6.5 12 6.5s2.5 1.12 2.5 2.5S13.38 11.5 12 11.5z"/>
+      </svg>
+      {{ destino.ubicacion }}, Guatemala
+    </p>
+    <p class="card__desc">{{ destino.descripcion }}</p>
+
+    <div class="card__stars" [attr.aria-label]="destino.calificacion + ' de 5 estrellas'">
+      @for (filled of stars; track $index) {
+        <span class="star" [class.star--filled]="filled">★</span>
+      }
+      <span class="card__rating">{{ destino.calificacion }}/5</span>
+    </div>
+  </div>
+</article>
