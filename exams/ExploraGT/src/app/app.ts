@@ -16,6 +16,14 @@ export class App implements OnInit {
   destinos: DestinoTuristico[] = [];
   categoriaActiva = 'Todas';
   readonly categorias = ['Todas', 'Natural', 'Cultural', 'Arqueológico', 'Playa', 'Aventura'];
+  readonly categoriaEmoji: Record<string, string> = {
+    'Todas': '🗺️',
+    'Natural': '🌿',
+    'Cultural': '🏛️',
+    'Arqueológico': '🗿',
+    'Playa': '🏖️',
+    'Aventura': '🧗',
+  };
 
   ngOnInit(): void {
     this.destinos = this.destinosService.getDestinos();
