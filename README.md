@@ -35,6 +35,8 @@ Work developed during class sessions, organized by technology layer.
 |--------|-------|-------------|
 | [classes/front/clase2_Front](./classes/front/clase2_Front/) | Angular 21 · TypeScript | 🔤 Frontend basics: variables, functions, objects, arrays |
 | [classes/front/clase_4_front](./classes/front/clase_4_front/) | Angular 21 · TypeScript | 🧩 Components, services, routing, and Angular pipes |
+| [classes/front/clase_6](./classes/front/clase_6/) | Angular 21 · TypeScript | ⚡ Pokémon search app consuming PokeAPI with HttpClient |
+| [classes/front/PreExamenParcialFront](./classes/front/PreExamenParcialFront/) | Angular 21 · TypeScript | 🛒 NexoCommerce — multi-page e-commerce landing with routing |
 
 ### 🧪 Pre-Exam Practice
 
@@ -42,7 +44,7 @@ Exercises developed as preparation for course exams.
 
 | Folder | Stack | Description |
 |--------|-------|-------------|
-| [classes/Pre_Examen](./classes/Pre_Examen/) | C# · .NET Core 3.1 | 📦 Inventory management API (Productos) |
+| [classes/backend/Pre_Examen](./classes/backend/Pre_Examen/) | C# · .NET Core 3.1 | 📦 Inventory management API (Productos) |
 
 ### 📝 Academic Tasks
 
@@ -56,6 +58,7 @@ Exercises developed as preparation for course exams.
 |------|-------|-------------|
 | [Partial Exam](./exams/Examen_Parcial_DesarrolloWeb1/) | C# · .NET Core 3.1 | 📅 Reservations management API |
 | [Final Exam](./exams/Examen_Final_DesarrolloWeb1/) | C# · .NET 8 | 🎪 Events and inscriptions management API |
+| [ExploraGT](./exams/ExploraGT/) | Angular 21 · TypeScript | 🇬🇹 Guatemala tourism destination browser with category filtering |
 
 ### 🚀 Projects
 

@@ -54,10 +54,35 @@ REST API for an event management platform with inscriptions, movement history, a
 
 ---
 
+## Final Exam — ExploraGT (Front-end)
+
+**Path:** `ExploraGT/`
+**Stack:** Angular 21 · TypeScript · Angular SSR (Express) · Vitest
+
+Single-page Angular application for browsing Guatemalan tourism destinations. Built as a front-end final exam.
+
+**Architecture:**
+- `src/app/components/destino-card/` — reusable card component showing image, location, rating, and badges
+- `src/app/services/destinos.service.ts` — in-memory data service providing all destinations
+- `src/app/interfaces/destino-turistico.interface.ts` — `DestinoTuristico` interface
+- `app.html` — root shell: hero header, category filter bar, destination grid, footer
+
+**Features:**
+
+| Feature | Description |
+|---------|-------------|
+| Category filter | Filter buttons for Arqueológico, Natural, Colonial, Gastronómico, Aventura |
+| Destination cards | Image, name, location, description, star rating, "Destacado" badge |
+| Reactive count | Shows number of destinations matching the active filter |
+| Static data | 10+ pre-loaded Guatemalan destinations (Tikal, Lago de Atitlán, etc.) |
+
+---
+
 ## Skills Evaluated
 
 - Layered architecture (Controllers, Services, Interfaces, Models, DTOs)
 - RESTful API design and correct HTTP verb usage
 - Dependency injection in ASP.NET Core
 - Data access with Dapper and SQL Server
+- Angular components, services, and reactive template patterns
 - Problem-solving under time constraints

@@ -1,59 +1,50 @@
-# PreExamenParcialFront
+# Pre-Exam Front – NexoCommerce
 
-This project was generated using [Angular CLI](https://github.com/angular/angular-cli) version 21.2.7.
+Multi-page Angular e-commerce landing for a fictional platform called **NexoCommerce**. Built as front-end pre-exam practice covering components, services, routing, and reactive template patterns.
 
-## Development server
+**Stack:** Angular 21 · TypeScript · Angular SSR (Express) · Angular Router · Vitest
 
-To start a local development server, run:
+---
 
-```bash
-ng serve
+## Pages & Routes
+
+| Route | Component | Description |
+|-------|-----------|-------------|
+| `/` | `HomeComponent` | Marketing landing — hero, services, about (MVV), CTA, contact |
+| `/productos` | `ProductsComponent` | Product catalogue with search and category filter |
+| `/ofertas` | `OffersComponent` | Dedicated offers page |
+| `**` | redirect → `/` | Wildcard fallback |
+
+## Architecture
+
+```
+src/app/
+├── pages/
+│   ├── home/          # Full landing page (hero, services, about, contact, footer)
+│   ├── products/      # Product catalogue (search, category pills, product cards)
+│   └── offers/        # Offers page
+├── components/
+│   └── navbar/        # Shared nav bar (transparent mode, home section links)
+├── services/
+│   └── products.service.ts   # Product data service
+├── models/            # Product interface and static data
+└── app.routes.ts      # Client-side route definitions
 ```
 
-Once the server is running, open your browser and navigate to `http://localhost:4200/`. The application will automatically reload whenever you modify any of the source files.
+## Features
 
-## Code scaffolding
+- **Home page** — animated hero with mock dashboard, services grid, mission/vision/values cards, CTA section, contact cards, footer
+- **Products page** — real-time search by name, category filter pills, product cards with discount badges, "Add to cart" toggle, broken image fallback with emoji
+- **Navbar** — transparent mode on home, links to in-page sections
+- **Routing** — `RouterLink` and `RouterOutlet` with wildcard redirect
 
-Angular CLI includes powerful code scaffolding tools. To generate a new component, run:
+---
 
-```bash
-ng generate component component-name
-```
-
-For a complete list of available schematics (such as `components`, `directives`, or `pipes`), run:
-
-```bash
-ng generate --help
-```
-
-## Building
-
-To build the project run:
+## Running the project
 
 ```bash
-ng build
+npm install        # Install dependencies
+npm start          # Dev server at http://localhost:4200
+npm run build      # Production build → dist/
+npm test           # Run tests with Vitest
 ```
-
-This will compile your project and store the build artifacts in the `dist/` directory. By default, the production build optimizes your application for performance and speed.
-
-## Running unit tests
-
-To execute unit tests with the [Vitest](https://vitest.dev/) test runner, use the following command:
-
-```bash
-ng test
-```
-
-## Running end-to-end tests
-
-For end-to-end (e2e) testing, run:
-
-```bash
-ng e2e
-```
-
-Angular CLI does not come with an end-to-end testing framework by default. You can choose one that suits your needs.
-
-## Additional Resources
-
-For more information on using the Angular CLI, including detailed command references, visit the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.

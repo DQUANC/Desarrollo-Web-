@@ -1,59 +1,65 @@
 # ExploraGT
 
-This project was generated using [Angular CLI](https://github.com/angular/angular-cli) version 21.2.13.
+Angular app for browsing Guatemalan tourism destinations, built as a front-end final exam.
 
-## Development server
+**Stack:** Angular 21 · TypeScript · Angular SSR (Express) · Vitest
 
-To start a local development server, run:
+---
 
-```bash
-ng serve
+## What it does
+
+ExploraGT presents a curated gallery of Guatemalan tourist destinations with category filtering. Users can filter by destination type and see a live count of matching results.
+
+## Features
+
+| Feature | Description |
+|---------|-------------|
+| Category filter | Filter buttons: Arqueológico, Natural, Colonial, Gastronómico, Aventura, (Todos) |
+| Destination cards | Photo, name, location (department), description, star rating (1–5), "Destacado" badge |
+| Reactive count | Displays how many destinations match the active filter |
+| Static data | 10+ pre-loaded destinations (Tikal, Lago de Atitlán, Antigua Guatemala, etc.) |
+| Responsive grid | CSS grid layout adapts to screen size |
+
+## Architecture
+
+```
+src/app/
+├── components/
+│   └── destino-card/               # Reusable destination card component
+│       ├── destino-card.component.ts
+│       ├── destino-card.component.html
+│       └── destino-card.component.scss
+├── interfaces/
+│   └── destino-turistico.interface.ts  # DestinoTuristico interface
+├── services/
+│   └── destinos.service.ts         # Injectable service with static destination list
+├── app.html                        # Root shell (hero, filter bar, gallery grid, footer)
+├── app.ts                          # Root component (filter logic, category state)
+└── app.routes.ts                   # Route configuration
 ```
 
-Once the server is running, open your browser and navigate to `http://localhost:4200/`. The application will automatically reload whenever you modify any of the source files.
+## Data model
 
-## Code scaffolding
-
-Angular CLI includes powerful code scaffolding tools. To generate a new component, run:
-
-```bash
-ng generate component component-name
+```typescript
+interface DestinoTuristico {
+  id: number;
+  nombre: string;
+  ubicacion: string;       // Department / region
+  descripcion: string;
+  categoria: string;       // Arqueológico | Natural | Colonial | Gastronómico | Aventura
+  imagenUrl: string;
+  calificacion: number;    // 1–5
+  destacado: boolean;
+}
 ```
 
-For a complete list of available schematics (such as `components`, `directives`, or `pipes`), run:
+---
+
+## Running the project
 
 ```bash
-ng generate --help
+npm install        # Install dependencies
+npm start          # Dev server at http://localhost:4200
+npm run build      # Production build → dist/
+npm test           # Run tests with Vitest
 ```
-
-## Building
-
-To build the project run:
-
-```bash
-ng build
-```
-
-This will compile your project and store the build artifacts in the `dist/` directory. By default, the production build optimizes your application for performance and speed.
-
-## Running unit tests
-
-To execute unit tests with the [Vitest](https://vitest.dev/) test runner, use the following command:
-
-```bash
-ng test
-```
-
-## Running end-to-end tests
-
-For end-to-end (e2e) testing, run:
-
-```bash
-ng e2e
-```
-
-Angular CLI does not come with an end-to-end testing framework by default. You can choose one that suits your needs.
-
-## Additional Resources
-
-For more information on using the Angular CLI, including detailed command references, visit the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.
