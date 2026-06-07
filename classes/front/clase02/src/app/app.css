@@ -1,0 +1,45 @@
+body {
+    margin: 0;
+}
+
+.navbar {
+    background: linear-gradient(135deg, #2563eb, #1e40af);
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 40px;
+    box-shadow: 0 3px 10px rgba(0,0,0,.2);
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.menu {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+.menu a {
+    color: white;
+    text-decoration: none;
+    padding: 10px 15px;
+    border-radius: 8px;
+    transition: 0.3s;
+}
+
+.menu a:hover {
+    background: rgba(255,255,255,.2);
+}
+
+.active {
+    background: white;
+    color: #1e40af !important;
+}
+
+.content {
+    padding: 30px;
+}
