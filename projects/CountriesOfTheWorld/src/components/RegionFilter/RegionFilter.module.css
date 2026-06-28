@@ -1,0 +1,35 @@
+.wrapper {
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  background-color: var(--color-elements);
+  border-radius: var(--radius);
+  box-shadow: 0 2px 8px var(--color-shadow);
+}
+
+.select {
+  appearance: none;
+  background: transparent;
+  border: none;
+  padding: var(--space-4) calc(var(--space-5) + 12px + var(--space-3)) var(--space-4) var(--space-5);
+  font-size: 0.875rem;
+  font-family: inherit;
+  font-weight: 600;
+  color: var(--color-text);
+  cursor: pointer;
+  outline: none;
+  min-width: 200px;
+  border-radius: var(--radius);
+}
+
+.select:focus-visible {
+  outline: 2px solid var(--color-text);
+  outline-offset: 2px;
+}
+
+.chevron {
+  position: absolute;
+  right: var(--space-4);
+  color: var(--color-text-secondary);
+  pointer-events: none;
+}

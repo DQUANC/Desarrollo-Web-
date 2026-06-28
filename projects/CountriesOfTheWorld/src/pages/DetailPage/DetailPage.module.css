@@ -1,0 +1,148 @@
+.page {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: var(--space-8) var(--space-4);
+}
+
+.back {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--space-2);
+  padding: var(--space-2) var(--space-6);
+  background-color: var(--color-elements);
+  box-shadow: 0 2px 8px var(--color-shadow);
+  border: none;
+  border-radius: var(--radius);
+  font-size: 0.875rem;
+  font-weight: 300;
+  font-family: inherit;
+  color: var(--color-text);
+  cursor: pointer;
+  margin-bottom: var(--space-10);
+  transition: background-color 0.2s;
+}
+
+.back:hover {
+  background-color: var(--color-input);
+}
+
+.content {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: var(--space-10) var(--space-14);
+  align-items: center;
+}
+
+.flagWrapper {
+  width: 100%;
+}
+
+.flag {
+  width: 100%;
+  height: auto;
+  border-radius: var(--radius);
+  box-shadow: 0 4px 24px var(--color-shadow);
+}
+
+.info {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-8);
+}
+
+.name {
+  font-size: 1.75rem;
+  font-weight: 800;
+}
+
+.details {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: var(--space-4) var(--space-8);
+}
+
+.column {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-2);
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space-1);
+  font-size: 0.875rem;
+  line-height: 1.6;
+}
+
+.row dt {
+  font-weight: 600;
+}
+
+.row dt::after {
+  content: ':';
+}
+
+.row dd {
+  font-weight: 300;
+  color: var(--color-text-secondary);
+}
+
+.borders {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: var(--space-3);
+}
+
+.bordersTitle {
+  font-size: 1rem;
+  font-weight: 600;
+  white-space: nowrap;
+}
+
+.badgeList {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space-2);
+}
+
+/* Skeleton */
+.skeleton {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: var(--space-10) var(--space-14);
+  align-items: center;
+}
+
+.skeletonFlag {
+  width: 100%;
+  aspect-ratio: 4 / 3;
+  background-color: var(--color-skeleton);
+  border-radius: var(--radius);
+  animation: shimmer 1.5s infinite;
+}
+
+.skeletonInfo {
+  height: 320px;
+  background-color: var(--color-skeleton);
+  border-radius: var(--radius);
+  animation: shimmer 1.5s infinite;
+}
+
+@keyframes shimmer {
+  0% { opacity: 1; }
+  50% { opacity: 0.4; }
+  100% { opacity: 1; }
+}
+
+@media (max-width: 768px) {
+  .content,
+  .skeleton {
+    grid-template-columns: 1fr;
+  }
+
+  .details {
+    grid-template-columns: 1fr;
+  }
+}

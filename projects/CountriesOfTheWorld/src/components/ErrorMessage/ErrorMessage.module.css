@@ -1,0 +1,35 @@
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: var(--space-4);
+  padding: var(--space-10) var(--space-4);
+  text-align: center;
+}
+
+.emoji {
+  font-size: 3rem;
+}
+
+.message {
+  font-size: 1rem;
+  color: var(--color-text-secondary);
+  max-width: 360px;
+}
+
+.retry {
+  padding: var(--space-3) var(--space-6);
+  background-color: var(--color-elements);
+  border: 1.5px solid var(--color-text-secondary);
+  border-radius: var(--radius);
+  font-size: 0.875rem;
+  font-weight: 600;
+  font-family: inherit;
+  color: var(--color-text);
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+.retry:hover {
+  background-color: var(--color-input);
+}

@@ -1,0 +1,56 @@
+.wrapper {
+  position: relative;
+  display: flex;
+  align-items: center;
+  background-color: var(--color-elements);
+  border-radius: var(--radius);
+  box-shadow: 0 2px 8px var(--color-shadow);
+  width: 100%;
+  max-width: 480px;
+}
+
+.icon {
+  position: absolute;
+  left: var(--space-5);
+  color: var(--color-text-secondary);
+  pointer-events: none;
+  flex-shrink: 0;
+}
+
+.input {
+  width: 100%;
+  border: none;
+  background: transparent;
+  padding: var(--space-4) var(--space-4) var(--space-4) calc(var(--space-5) + 16px + var(--space-3));
+  font-size: 0.875rem;
+  font-family: inherit;
+  color: var(--color-text);
+  outline: none;
+  border-radius: var(--radius);
+}
+
+.input::placeholder {
+  color: var(--color-text-secondary);
+}
+
+.input:focus-visible {
+  outline: 2px solid var(--color-text);
+  outline-offset: 2px;
+}
+
+/* remove default search cancel button */
+.input::-webkit-search-cancel-button {
+  -webkit-appearance: none;
+}
+
+.srOnly {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border-width: 0;
+}
