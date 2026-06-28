@@ -1,0 +1,119 @@
+<!-- NAVIGATION -->
+<nav class="navbar">
+  <div class="nav-container">
+    <a routerLink="/home" class="nav-brand">
+      <span class="brand-icon">🔧</span>
+      <span class="brand-name">MotoFix</span>
+    </a>
+    <ul class="nav-links">
+      <li><a routerLink="/home">Inicio</a></li>
+      <li><a routerLink="/home" fragment="servicios">Servicios</a></li>
+      <li><a routerLink="/home" fragment="contacto">Contacto</a></li>
+      <li><a routerLink="/clients" class="active">Clientes</a></li>
+    </ul>
+  </div>
+</nav>
+
+<!-- PAGE HEADER -->
+<header class="page-header">
+  <div class="header-content">
+    <div class="breadcrumb">
+      <a routerLink="/home">Inicio</a>
+      <span>/</span>
+      <span>Clientes</span>
+    </div>
+    <h1>Clientes Registrados</h1>
+    <p>Gestion de clientes del taller MotoFix</p>
+  </div>
+</header>
+
+<!-- MAIN CONTENT -->
+<main class="clients-main">
+  <div class="container">
+
+    <!-- STATS BAR -->
+    <div class="stats-bar" *ngIf="!isLoading && !hasError">
+      <div class="stat">
+        <span class="stat-number">{{ clients.length }}</span>
+        <span class="stat-label">Clientes Totales</span>
+      </div>
+      <div class="stat">
+        <span class="stat-number">{{ filteredClients.length }}</span>
+        <span class="stat-label">Mostrando</span>
+      </div>
+      <div class="stat">
+        <span class="stat-number active">Activos</span>
+        <span class="stat-label">Estado</span>
+      </div>
+    </div>
+
+    <!-- SEARCH BAR -->
+    <div class="search-wrapper" *ngIf="!isLoading && !hasError">
+      <div class="search-box">
+        <span class="search-icon">🔍</span>
+        <input
+          type="text"
+          placeholder="Buscar por nombre, email o empresa..."
+          (input)="onSearch($event)"
+          class="search-input"
+        />
+      </div>
+    </div>
+
+    <!-- LOADING STATE -->
+    <div class="loading-state" *ngIf="isLoading">
+      <div class="spinner"></div>
+      <p>Cargando clientes...</p>
+    </div>
+
+    <!-- ERROR STATE -->
+    <div class="error-state" *ngIf="hasError">
+      <div class="error-icon">⚠️</div>
+      <h3>Error al cargar los datos</h3>
+      <p>{{ errorMessage }}</p>
+      <button class="btn btn-primary" (click)="loadClients()">
+        Reintentar
+      </button>
+    </div>
+
+    <!-- EMPTY SEARCH RESULTS -->
+    <div class="empty-state" *ngIf="!isLoading && !hasError && filteredClients.length === 0">
+      <div class="empty-icon">🔎</div>
+      <h3>Sin resultados</h3>
+      <p>No se encontraron clientes con "{{ searchTerm }}"</p>
+    </div>
+
+    <!-- CLIENTS GRID -->
+    <div class="clients-grid" *ngIf="!isLoading && !hasError && filteredClients.length > 0">
+      <div class="client-card" *ngFor="let client of filteredClients">
+        <div class="client-card-header">
+          <div class="client-avatar">{{ client.initials }}</div>
+          <div class="client-id-badge">#{{ client.id }}</div>
+        </div>
+        <div class="client-card-body">
+          <h3 class="client-name">{{ client.name }}</h3>
+          <div class="client-detail">
+            <span class="detail-icon">📧</span>
+            <span class="detail-text">{{ client.email }}</span>
+          </div>
+          <div class="client-detail">
+            <span class="detail-icon">📞</span>
+            <span class="detail-text">{{ client.phone }}</span>
+          </div>
+          <div class="client-detail">
+            <span class="detail-icon">🏢</span>
+            <span class="detail-text">{{ client.company }}</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</main>
+
+<!-- FOOTER -->
+<footer class="footer">
+  <div class="container">
+    <p>&copy; 2026 MotoFix - Todos los derechos reservados.</p>
+  </div>
+</footer>
