@@ -9,11 +9,11 @@ builder.Services.AddControllers();
 
 builder.Services.AddOpenApi();
 
-// conexión
+// conexiï¿½n
 string connectionString =
     builder.Configuration.GetConnectionString("DefaultConnection")
     ?? throw new InvalidOperationException(
-        "No se encontró la cadena de conexión DefaultConnection."
+        "No se encontrï¿½ la cadena de conexiï¿½n DefaultConnection."
     );
 
 // PostgreSQL
@@ -23,6 +23,7 @@ builder.Services.AddSingleton(
 
 // Servicios
 builder.Services.AddScoped<IUsuario, UsuarioServicio>();
+builder.Services.AddScoped<ICliente, ClienteServicio>();
 
 var app = builder.Build();
 

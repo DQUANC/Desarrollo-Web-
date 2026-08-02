@@ -155,14 +155,14 @@ Multi-page e-commerce landing for a fictional platform called **NexoCommerce**. 
 **Path:** `aplicaciones-mobiles/Backend_Banco/`
 **Stack:** C# · .NET 9 · ASP.NET Core Web API · Dapper · PostgreSQL (Npgsql) · Swagger
 
-Backend API built as the server side for a mobile banking app, with full CRUD plus status/password management for users.
+Backend API built as the server side for a mobile banking app, with full CRUD plus status/password management for users, and client (Cliente) registration.
 
 **🏗️ Architecture:**
-- `Backend_Banco/` — Web API project, `Controllers/UsuarioController`
-- `Core/` — `Servicios/UsuarioServicio`, `Interfaz/IUsuario`
-- `Modelo/` — `Modelos/MUsuario`
+- `Backend_Banco/` — Web API project, `Controllers/UsuarioController`, `Controllers/ClienteController`
+- `Core/` — `Servicios/UsuarioServicio`, `Interfaz/IUsuario`, `Servicios/ClienteServicio`, `Interfaz/ICliente`
+- `Modelo/` — `Modelos/MUsuario`, `Modelos/MCliente`
 
-**Endpoints:**
+**Endpoints — Usuario:**
 
 | Method | Route | Description |
 |--------|-------|-------------|
@@ -174,6 +174,15 @@ Backend API built as the server side for a mobile banking app, with full CRUD pl
 | PATCH | `/api/Usuario/{id}/estado` | Toggle a user's status |
 | PATCH | `/api/Usuario/{id}/password` | Change a user's password |
 | DELETE | `/api/Usuario/{id}` | Delete a user |
+
+**Endpoints — Cliente:**
+
+| Method | Route | Description |
+|--------|-------|-------------|
+| GET | `/Api/Cliente/ObtenerTodos` | List all clients |
+| GET | `/Api/Cliente/{id}` | Get client by ID |
+| POST | `/Api/Cliente/Ingresar` | Register a client |
+| PUT | `/Api/Cliente/{id}` | Update a client |
 
 ---
 
