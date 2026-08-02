@@ -1,6 +1,6 @@
 # 📚 Classes
 
-This folder contains work developed during class sessions for the Web Development course, organized by technology layer: **backend** and **frontend**.
+This folder contains work developed during class sessions, organized by course and technology layer: **backend**, **frontend**, and **aplicaciones-mobiles**.
 
 | Folder | Stack | Description |
 |--------|-------|-------------|
@@ -11,6 +11,7 @@ This folder contains work developed during class sessions for the Web Developmen
 | [front/clase_4_front](./front/clase_4_front/) | Angular 21 · TypeScript | 🧩 Components, services, routing, and Angular pipes |
 | [front/clase_6](./front/clase_6/) | Angular 21 · TypeScript | ⚡ Pokémon search app consuming PokeAPI with HttpClient |
 | [front/PreExamenParcialFront](./front/PreExamenParcialFront/) | Angular 21 · TypeScript | 🛒 NexoCommerce — multi-page e-commerce landing with routing |
+| [aplicaciones-mobiles/Backend_Banco](./aplicaciones-mobiles/Backend_Banco/) | C# · .NET 9 · PostgreSQL | 🏦 Banco backend API (Usuarios) for the Mobile Applications course |
 
 ---
 
@@ -144,6 +145,35 @@ Multi-page e-commerce landing for a fictional platform called **NexoCommerce**. 
 - `services/products.service.ts` — product data service
 - `models/` — product interface and data models
 - `app.routes.ts` — client-side routing (`/`, `/productos`, `/ofertas`)
+
+---
+
+## 📱 Aplicaciones Móviles
+
+### 🏦 Backend Banco – Usuarios API
+
+**Path:** `aplicaciones-mobiles/Backend_Banco/`
+**Stack:** C# · .NET 9 · ASP.NET Core Web API · Dapper · PostgreSQL (Npgsql) · Swagger
+
+Backend API built as the server side for a mobile banking app, with full CRUD plus status/password management for users.
+
+**🏗️ Architecture:**
+- `Backend_Banco/` — Web API project, `Controllers/UsuarioController`
+- `Core/` — `Servicios/UsuarioServicio`, `Interfaz/IUsuario`
+- `Modelo/` — `Modelos/MUsuario`
+
+**Endpoints:**
+
+| Method | Route | Description |
+|--------|-------|-------------|
+| GET | `/api/Usuario/ObtenerTodos` | List all users |
+| GET | `/api/Usuario/{id}` | Get user by ID |
+| GET | `/api/Usuario/usuario/{usuario}` | Get user by login |
+| POST | `/api/Usuario` | Create a user |
+| PUT | `/api/Usuario/{id}` | Update a user |
+| PATCH | `/api/Usuario/{id}/estado` | Toggle a user's status |
+| PATCH | `/api/Usuario/{id}/password` | Change a user's password |
+| DELETE | `/api/Usuario/{id}` | Delete a user |
 
 ---
 

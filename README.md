@@ -1,15 +1,15 @@
 # 🌐 Web Development Repository
 
-This repository contains my work throughout the Web Development course, organized into classes, academic tasks, exams, and projects.
+This repository contains my work throughout the Web Development course, organized into classes, academic tasks, exams, and projects. It also includes backend work from the related Mobile Applications course.
 
-The course covers full-stack web development: Back-end with C# / ASP.NET Core, Front-end with Angular, API design, and database integration with SQL Server.
+The course covers full-stack web development: Back-end with C# / ASP.NET Core, Front-end with Angular, API design, and database integration with SQL Server and PostgreSQL.
 
 ## 📌 Topics Covered
 
-- ⚙️ Back-end development with C# (.NET Core 3.1 and .NET 8)
+- ⚙️ Back-end development with C# (.NET Core 3.1, .NET 8, and .NET 9)
 - 🔗 RESTful API design with ASP.NET Core Web API
 - 🏗️ Layered architecture: Controllers, Services, Interfaces, Models, DTOs
-- 🗄️ Data access with Dapper and SQL Server
+- 🗄️ Data access with Dapper, SQL Server, and PostgreSQL
 - 📖 API documentation with Swagger
 - 🎨 Front-end development with Angular 21 and TypeScript
 - 🧩 Angular template syntax, components, objects, and arrays
@@ -37,6 +37,12 @@ Work developed during class sessions, organized by technology layer.
 | [classes/front/clase_4_front](./classes/front/clase_4_front/) | Angular 21 · TypeScript | 🧩 Components, services, routing, and Angular pipes |
 | [classes/front/clase_6](./classes/front/clase_6/) | Angular 21 · TypeScript | ⚡ Pokémon search app consuming PokeAPI with HttpClient |
 | [classes/front/PreExamenParcialFront](./classes/front/PreExamenParcialFront/) | Angular 21 · TypeScript | 🛒 NexoCommerce — multi-page e-commerce landing with routing |
+
+**📱 Aplicaciones Móviles**
+
+| Folder | Stack | Description |
+|--------|-------|-------------|
+| [classes/aplicaciones-mobiles/Backend_Banco](./classes/aplicaciones-mobiles/Backend_Banco/) | C# · .NET 9 · PostgreSQL | 🏦 Banco backend API (Usuarios) for the Mobile Applications course |
 
 ### 🧪 Pre-Exam Practice
 
