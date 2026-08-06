@@ -157,5 +157,27 @@ namespace Core.Servicios
                 return false;
             }
         }
+
+        public async Task<bool> Eliminar(int id)
+        {
+            try
+            {
+                const string sql = @"
+                    DELETE FROM cliente
+                    WHERE id_cliente = @IdCliente;";
+
+                await using var connection = CrearConexion();
+
+                int resultado = await connection.ExecuteAsync(sql, new { IdCliente = id });
+
+                return resultado > 0;
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine("Error al eliminar cliente: " + ex.Message);
+
+                return false;
+            }
+        }
     }
 }
