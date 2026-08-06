@@ -9,11 +9,11 @@ builder.Services.AddControllers();
 
 builder.Services.AddOpenApi();
 
-// conexi�n
+// conexión
 string connectionString =
     builder.Configuration.GetConnectionString("DefaultConnection")
     ?? throw new InvalidOperationException(
-        "No se encontr� la cadena de conexi�n DefaultConnection."
+        "No se encontró la cadena de conexión DefaultConnection."
     );
 
 // PostgreSQL
