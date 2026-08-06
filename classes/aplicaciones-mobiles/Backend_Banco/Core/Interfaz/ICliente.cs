@@ -11,5 +11,7 @@ namespace Core.Interfaz
         Task<bool> Insertar(MCliente cliente);
 
         Task<bool> Actualizar(MCliente cliente);
+
+        Task<bool> Eliminar(int id);
     }
 }

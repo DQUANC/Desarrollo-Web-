@@ -94,5 +94,26 @@ namespace Backend_Banco.Controllers
             }
             return Ok(new { mensaje = "El cliente fue actualizado correctamente" });
         }
+
+        // DELETE api/cliente/#
+        [HttpDelete("{id:int}")]
+        public async Task<IActionResult> Eliminar(int id)
+        {
+            var clienteExistente = await _clienteServicio.ObtenerPorId(id);
+            if (clienteExistente == null)
+            {
+                return NotFound(new { mensaje = "Cliente no encontrado." });
+            }
+
+            bool resultado = await _clienteServicio.Eliminar(id);
+            if (!resultado)
+            {
+                return StatusCode(500, new
+                {
+                    mensaje = "No fue posible eliminar el cliente."
+                });
+            }
+            return Ok(new { mensaje = "El cliente fue eliminado correctamente." });
+        }
     }
 }
