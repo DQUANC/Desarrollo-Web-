@@ -1,0 +1,43 @@
+@Examen_Parcial_HostAddress = http://localhost:5260
+
+GET {{Examen_Parcial_HostAddress}}/Api/Pedido/ObtenerTodos
+Accept: application/json
+
+###
+
+GET {{Examen_Parcial_HostAddress}}/Api/Pedido/1
+Accept: application/json
+
+###
+
+POST {{Examen_Parcial_HostAddress}}/Api/Pedido/Ingresar
+Content-Type: application/json
+
+{
+  "numeroPedido": "PED-0001",
+  "nombreCliente": "Juan Pérez",
+  "direccionEntrega": "Zona 10, Ciudad de Guatemala",
+  "monto": 250.50,
+  "estado": "Pendiente",
+  "usuario": "dquan"
+}
+
+###
+
+PUT {{Examen_Parcial_HostAddress}}/Api/Pedido/1
+Content-Type: application/json
+
+{
+  "numeroPedido": "PED-0001",
+  "nombreCliente": "Juan Pérez",
+  "direccionEntrega": "Zona 10, Ciudad de Guatemala",
+  "monto": 250.50,
+  "estado": "Enviado",
+  "usuario": "dquan"
+}
+
+###
+
+DELETE {{Examen_Parcial_HostAddress}}/Api/Pedido/1
+
+###
