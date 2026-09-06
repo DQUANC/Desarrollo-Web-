@@ -1,0 +1,190 @@
+<div class="contenedor">
+
+    <h1>Movimientos Bancarios</h1>
+
+    <div class="formulario">
+
+        <div class="fila">
+
+            <div>
+
+                <label>
+                    Cuenta Origen
+                </label>
+
+                <input
+                    type="number"
+                    [(ngModel)]="movimiento.idCuentaOrigen">
+
+            </div>
+
+            <div>
+
+                <label>
+                    Cuenta Destino
+                </label>
+
+                <input
+                    type="number"
+                    [(ngModel)]="movimiento.idCuentaDestino">
+
+            </div>
+
+            <div>
+
+                <label>
+                    Tipo Movimiento
+                </label>
+
+                <input
+                    type="number"
+                    [(ngModel)]="movimiento.idTipoMovimiento">
+
+            </div>
+
+        </div>
+
+        <div class="fila">
+
+            <div>
+
+                <label>Monto</label>
+
+                <input
+                    type="number"
+                    [(ngModel)]="movimiento.monto">
+
+            </div>
+
+            <div>
+
+                <label>Descripción</label>
+
+                <input
+                    type="text"
+                    [(ngModel)]="movimiento.descripcion">
+
+            </div>
+
+            <div>
+
+                <label>Usuario</label>
+
+                <input
+                    type="number"
+                    [(ngModel)]="movimiento.idUsuario">
+
+            </div>
+
+        </div>
+
+        <button
+            class="guardar"
+            (click)="guardar()">
+
+            Registrar Movimiento
+
+        </button>
+
+    </div>
+
+    <h2>Historial de Movimientos</h2>
+
+    <table>
+
+        <thead>
+
+            <tr>
+
+                <th>ID</th>
+
+                <th>
+                    Cuenta Origen
+                </th>
+
+                <th>
+                    Cuenta Destino
+                </th>
+
+                <th>
+                    Tipo
+                </th>
+
+                <th>
+                    Monto
+                </th>
+
+                <th>
+                    Saldo Anterior
+                </th>
+
+                <th>
+                    Saldo Nuevo
+                </th>
+
+                <th>
+                    Descripción
+                </th>
+
+                <th>
+                    Fecha
+                </th>
+
+            </tr>
+
+        </thead>
+
+        <tbody>
+
+            @for (
+                m of movimientos;
+                track m.idMovimiento
+            ) {
+
+                <tr>
+
+                    <td>
+                        {{ m.idMovimiento }}
+                    </td>
+
+                    <td>
+                        {{ m.idCuentaOrigen }}
+                    </td>
+
+                    <td>
+                        {{ m.idCuentaDestino }}
+                    </td>
+
+                    <td>
+                        {{ m.idTipoMovimiento }}
+                    </td>
+
+                    <td>
+                        Q {{ m.monto }}
+                    </td>
+
+                    <td>
+                        Q {{ m.saldoAnterior }}
+                    </td>
+
+                    <td>
+                        Q {{ m.saldoNuevo }}
+                    </td>
+
+                    <td>
+                        {{ m.descripcion }}
+                    </td>
+
+                    <td>
+                        {{ m.fecha }}
+                    </td>
+
+                </tr>
+
+            }
+
+        </tbody>
+
+    </table>
+
+</div>

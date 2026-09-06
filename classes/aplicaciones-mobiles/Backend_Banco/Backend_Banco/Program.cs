@@ -1,5 +1,6 @@
 using Core.Interfaz;
 using Core.Servicios;
+using MongoDB.Driver;
 using Npgsql;
 
 var builder = WebApplication.CreateBuilder(args);
@@ -21,9 +22,20 @@ builder.Services.AddSingleton(
     NpgsqlDataSource.Create(connectionString)
 );
 
+// MongoDB
+string mongoConnectionString =
+    builder.Configuration.GetConnectionString("MongoDB")
+    ?? throw new InvalidOperationException(
+        "No se encontró la cadena de conexión MongoDB."
+    );
+builder.Services.AddSingleton<IMongoClient>(
+    new MongoClient(mongoConnectionString)
+    );
+
 // Servicios
 builder.Services.AddScoped<IUsuario, UsuarioServicio>();
 builder.Services.AddScoped<ICliente, ClienteServicio>();
+builder.Services.AddScoped<IMovimiento, MovimientoServicio>();
 
 var app = builder.Build();
 

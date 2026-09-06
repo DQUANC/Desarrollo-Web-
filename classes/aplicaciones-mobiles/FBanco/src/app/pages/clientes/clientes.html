@@ -1,0 +1,206 @@
+<div class="contenedor">
+
+    <h1>Administración de Clientes</h1>
+
+    @if (mensaje) {
+
+        <div class="mensaje">
+            {{ mensaje }}
+        </div>
+
+    }
+
+    <div class="formulario">
+
+        <h2>
+            {{ editando ? 'Editar Cliente' : 'Nuevo Cliente' }}
+        </h2>
+
+        <div class="fila">
+
+            <div>
+                <label>DPI</label>
+
+                <input
+                    type="text"
+                    [(ngModel)]="cliente.dpi"
+                    placeholder="Ingrese DPI">
+            </div>
+
+            <div>
+                <label>Nombres</label>
+
+                <input
+                    type="text"
+                    [(ngModel)]="cliente.nombres"
+                    placeholder="Ingrese nombres">
+            </div>
+
+            <div>
+                <label>Apellidos</label>
+
+                <input
+                    type="text"
+                    [(ngModel)]="cliente.apellidos"
+                    placeholder="Ingrese apellidos">
+            </div>
+
+        </div>
+
+        <div class="fila">
+
+            <div>
+                <label>Teléfono</label>
+
+                <input
+                    type="text"
+                    [(ngModel)]="cliente.telefono">
+            </div>
+
+            <div>
+                <label>Correo</label>
+
+                <input
+                    type="email"
+                    [(ngModel)]="cliente.correo">
+            </div>
+
+            <div>
+                <label>Dirección</label>
+
+                <input
+                    type="text"
+                    [(ngModel)]="cliente.direccion">
+            </div>
+
+        </div>
+
+        <div class="botones">
+
+            <button
+                class="guardar"
+                (click)="guardar()">
+
+                {{ editando ? 'Actualizar' : 'Guardar' }}
+
+            </button>
+
+            @if (editando) {
+
+                <button
+                    class="cancelar"
+                    (click)="cancelar()">
+
+                    Cancelar
+
+                </button>
+
+            }
+
+        </div>
+
+    </div>
+
+    <h2>Listado de Clientes</h2>
+
+    <table>
+
+        <thead>
+
+            <tr>
+                <th>ID</th>
+                <th>DPI</th>
+                <th>Nombre</th>
+                <th>Teléfono</th>
+                <th>Correo</th>
+                <th>Estado</th>
+                <th>Acciones</th>
+            </tr>
+
+        </thead>
+
+        <tbody>
+
+            @for (
+                cli of clientes;
+                track cli.idCliente
+            ) {
+
+                <tr>
+
+                    <td>
+                        {{ cli.idCliente }}
+                    </td>
+
+                    <td>
+                        {{ cli.dpi }}
+                    </td>
+
+                    <td>
+                        {{ cli.nombres }}
+                        {{ cli.apellidos }}
+                    </td>
+
+                    <td>
+                        {{ cli.telefono }}
+                    </td>
+
+                    <td>
+                        {{ cli.correo }}
+                    </td>
+
+                    <td>
+
+                        @if (cli.estado) {
+
+                            <span class="activo">
+                                Activo
+                            </span>
+
+                        } @else {
+
+                            <span class="inactivo">
+                                Inactivo
+                            </span>
+
+                        }
+
+                    </td>
+
+                    <td>
+
+                        <button
+                            class="editar"
+                            (click)="editar(cli)">
+
+                            Editar
+
+                        </button>
+
+                        <button
+                            class="estado"
+                            (click)="cambiarEstado(cli.idCliente)">
+
+                            Estado
+
+                        </button>
+
+                        <button
+                            class="eliminar"
+                            (click)="eliminar(cli.idCliente)">
+
+                            Eliminar
+
+                        </button>
+
+                    </td>
+
+                </tr>
+
+            }
+
+        </tbody>
+
+    </table>
+
+</div>

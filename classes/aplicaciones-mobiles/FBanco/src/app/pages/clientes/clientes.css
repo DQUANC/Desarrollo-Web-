@@ -1,0 +1,108 @@
+.contenedor {
+    max-width: 1300px;
+    margin: auto;
+}
+
+h1 {
+    color: #004683;
+}
+
+.formulario {
+    background: #f5f7fa;
+    padding: 25px;
+    border-radius: 7px;
+    margin-bottom: 30px;
+}
+
+.fila {
+    display: flex;
+    gap: 20px;
+    margin-bottom: 15px;
+}
+
+.fila div {
+    flex: 1;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #bbb;
+    border-radius: 4px;
+}
+
+button {
+    border: none;
+    padding: 8px 14px;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-right: 5px;
+}
+
+.guardar {
+    background: #004683;
+    color: white;
+}
+
+.cancelar {
+    background: #777;
+    color: white;
+}
+
+.editar {
+    background: #e8a317;
+    color: white;
+}
+
+.estado {
+    background: #1884b8;
+    color: white;
+}
+
+.eliminar {
+    background: #c62828;
+    color: white;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+th {
+    background: #004683;
+    color: white;
+    padding: 10px;
+}
+
+td {
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
+}
+
+tbody tr:hover {
+    background: #f3f6f8;
+}
+
+.activo {
+    color: green;
+    font-weight: bold;
+}
+
+.inactivo {
+    color: red;
+    font-weight: bold;
+}
+
+.mensaje {
+    background: #e7f3ff;
+    border: 1px solid #94c7ef;
+    padding: 12px;
+    margin-bottom: 15px;
+}

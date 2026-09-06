@@ -1,0 +1,33 @@
+.inicio {
+    text-align: center;
+    padding-top: 60px;
+}
+
+.inicio h1 {
+    color: #004683;
+    font-size: 36px;
+}
+
+.inicio p {
+    color: #555;
+    font-size: 18px;
+}
+
+.opciones {
+    margin-top: 40px;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.opciones a {
+    background: #004683;
+    color: white;
+    padding: 20px 35px;
+    text-decoration: none;
+    border-radius: 6px;
+}
+
+.opciones a:hover {
+    background: #1468a8;
+}

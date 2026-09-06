@@ -1,0 +1,159 @@
+<div class="contenedor">
+
+    <h1>Usuarios</h1>
+
+    <div class="formulario">
+
+        <div class="fila">
+
+            <div>
+                <label>Usuario</label>
+
+                <input
+                    [(ngModel)]="usuario.usuario">
+            </div>
+
+            <div>
+                <label>Nombre</label>
+
+                <input
+                    [(ngModel)]="usuario.nombre">
+            </div>
+
+            <div>
+                <label>Correo</label>
+
+                <input
+                    [(ngModel)]="usuario.correo">
+            </div>
+
+        </div>
+
+        <div class="fila">
+
+            <div>
+                <label>Contraseña</label>
+
+                <input
+                    type="password"
+                    [(ngModel)]="usuario.password">
+            </div>
+
+            <div>
+                <label>Rol</label>
+
+                <input
+                    type="number"
+                    [(ngModel)]="usuario.idRol">
+            </div>
+
+        </div>
+
+        <button
+            class="guardar"
+            (click)="guardar()">
+
+            {{ editando ? 'Actualizar' : 'Guardar' }}
+
+        </button>
+
+        @if (editando) {
+
+            <button
+                class="cancelar"
+                (click)="cancelar()">
+
+                Cancelar
+
+            </button>
+
+        }
+
+    </div>
+
+    <table>
+
+        <thead>
+
+            <tr>
+                <th>ID</th>
+                <th>Usuario</th>
+                <th>Nombre</th>
+                <th>Correo</th>
+                <th>Rol</th>
+                <th>Estado</th>
+                <th>Acciones</th>
+            </tr>
+
+        </thead>
+
+        <tbody>
+
+            @for (
+                u of usuarios;
+                track u.idUsuario
+            ) {
+
+                <tr>
+
+                    <td>
+                        {{ u.idUsuario }}
+                    </td>
+
+                    <td>
+                        {{ u.usuario }}
+                    </td>
+
+                    <td>
+                        {{ u.nombre }}
+                    </td>
+
+                    <td>
+                        {{ u.correo }}
+                    </td>
+
+                    <td>
+                        {{ u.idRol }}
+                    </td>
+
+                    <td>
+                        {{ u.estado ? 'Activo' : 'Inactivo' }}
+                    </td>
+
+                    <td>
+
+                        <button
+                            class="editar"
+                            (click)="editar(u)">
+
+                            Editar
+
+                        </button>
+
+                        <button
+                            class="estado"
+                            (click)="cambiarEstado(u.idUsuario)">
+
+                            Estado
+
+                        </button>
+
+                        <button
+                            class="eliminar"
+                            (click)="eliminar(u.idUsuario)">
+
+                            Eliminar
+
+                        </button>
+
+                    </td>
+
+                </tr>
+
+            }
+
+        </tbody>
+
+    </table>
+
+</div>

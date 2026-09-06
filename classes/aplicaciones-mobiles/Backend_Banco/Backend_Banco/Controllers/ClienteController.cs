@@ -7,7 +7,6 @@ namespace Backend_Banco.Controllers
 {
     [Route("Api/[Controller]")]
     [ApiController]
-    
     public class ClienteController : Controller
     {
         private readonly ICliente _clienteServicio;

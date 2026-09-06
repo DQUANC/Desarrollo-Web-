@@ -1,0 +1,81 @@
+using Core.Interfaz;
+using Core.Servicios;
+using MongoDB.Driver;
+using Npgsql;
+
+var builder = WebApplication.CreateBuilder(args);
+
+// Controladores
+builder.Services.AddControllers();
+
+builder.Services.AddCors(options =>
+{
+    options.AddPolicy("AngularApp", policy =>
+    {
+        policy
+            .WithOrigins("http://localhost:4200")
+            .AllowAnyHeader()
+            .AllowAnyMethod();
+    });
+});
+
+builder.Services.AddOpenApi();
+
+// conexión
+string connectionString =
+    builder.Configuration.GetConnectionString("DefaultConnection")
+    ?? throw new InvalidOperationException(
+        "No se encontró la cadena de conexión DefaultConnection."
+    );
+
+// PostgreSQL
+builder.Services.AddSingleton(
+    NpgsqlDataSource.Create(connectionString)
+);
+
+// =====================================
+// MONGODB
+// =====================================
+
+string mongoConnectionString =
+    builder.Configuration.GetConnectionString("MongoDB")
+    ?? throw new InvalidOperationException(
+        "No se encontró la cadena de conexión MongoDB."
+    );
+
+builder.Services.AddSingleton<IMongoClient>(
+    new MongoClient(mongoConnectionString)
+);
+
+
+// Servicios
+builder.Services.AddScoped<IUsuario, UsuarioServicio>();
+builder.Services.AddScoped<ICliente, ClienteServicio>();
+builder.Services.AddScoped<IMovimiento, MovimientoServicio>();
+
+var app = builder.Build();
+
+app.UseCors("AngularApp");
+
+if (app.Environment.IsDevelopment())
+{
+    app.MapOpenApi();
+    // /swagger
+    app.UseSwaggerUI(options =>
+    {
+        options.SwaggerEndpoint(
+            "/openapi/v1.json",
+            "Backend Banco API v1"
+        );
+
+        options.RoutePrefix = "swagger";
+    });
+}
+
+app.UseHttpsRedirection();
+
+app.UseAuthorization();
+
+app.MapControllers();
+
+app.Run();
